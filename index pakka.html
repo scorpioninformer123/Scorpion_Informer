@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#" > <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+
+<head>
+	<title>scorpion informer</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+	<script src="jquery.lineProgressbar.js"></script>
+	<script src="wow.min.js"></script>
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" href="jquery.lineProgressbar.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab"rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" hrref="style.css">
+	<meta charset="utf-8">
+	<title>Sticky Social Bar with CSS3 Animations</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900">
+	<style type="text/css">
+</head>
+<style>
+
+body {
+	font-family: 'Roboto Slab', serif;
+}
+.navbar-custom{
+background-color: #282e3e;
+	color: #FFF;
+	border-radius: 0px;
+	padding: 10px;
+}
+.navbar-custom .navbar-nav>li>a{
+	color: #FFF;
+	font-size: 19px;margin-left: 13px;
+}
+.navbar-custom .navbar-nav>.active>a{
+	color: #fff;background-color: #e8491d;
+}
+.navbar-custom .navbar-nav>li>a:hover{
+	background-color: #e8491d;
+}
+.navbar-custom .navbar-brand{
+color: #fff;font-size: 27px;margin-left: 15px;
+}
+.navbar-custom .navbar-brand:hover{
+color: #fff;font-size: 27px;
+}
+.slider{
+	width: 100%;
+	padding: 0px;margin: 0px;
+}
+.carousel-caption{
+	color: #fff;
+	position: absolute;
+	top: 35%;
+	left:-20px;
+}
+b{
+	font-size: 40px;
+	border-bottom-style: ridge;
+	font-weight: bold;
+	border-bottom-color: #e8491d;
+	
+}
+#Services{
+	font-size: 45px;
+	border-bottom-style: ridge;
+	font-weight: bold;
+	border-bottom-color: #e8491d;
+}
+.col1{
+	border-style: solid;border-color: #999999;
+	border-width: 1px;min-height: 350px;
+}
+.icons{
+	width: 130px;font-size: 60px;background-color: #d9d9d9;
+	padding: 5px 10px;height: 110px;
+	margin-top: -50px;
+	color: #e8491d;
+}
+.btn-primary{
+	color: #fff;background-color: #e8491d;border-radius: 0px;border-color: #82c434;
+}
+#about{
+	width: 100%;
+	min-height: 600px;
+	background-color: #282e3e;
+	margin-top: 50px;
+}
+#aboutcompany{
+	font-size: 45px;
+	border-bottom-style: ridge;
+	border-bottom-color: #e8491d;
+	position: relative;
+	top:35px;
+	color: #fff;
+}
+#team{
+	position: relative;
+top:40px;
+}
+#ourteam{
+	font-size: 45px;
+	border-bottom-style: ridge;
+	font-weight: bold;
+	border-bottom-color: #e8491d;
+}
+.team-member{
+	text-align: center;
+	margin-top: 5px;
+}
+.icon i{
+	font-size: 20px;
+	height: 50px;
+	width: 50px;
+	background-color: #98e698;
+	padding: 18px;
+	border-radius: 50%;
+}
+.icon i{
+	background-color: #46d248;
+}
+.btn-primary1{
+	color: #fff;background-color: black;border-radius: 0px;border-color: black;border-radius: 25px;
+}
+.btn-primary2{
+	color: #fff; background-color:#e8491d;border-radius: 0px;border-color: #e8491d;border-radius: 25px;
+}
+#footer{
+	width: 100%;
+	min-height: 400px;
+	background-color: #282e3e;
+	position: relative;
+	top: 150px;	
+}
+.sticky-container{
+		/*background-color: #333;*/
+		padding: 0px;
+		margin: 0px;
+		position: fixed;
+		right: -119px;
+		top:130px;
+		width: 200px;
+	}
+	.sticky li{
+		list-style-type: none;
+		background-color: #333;
+		color: #efefef;
+		height: 43px;
+		padding: 0px;
+		margin: 0px 0px 1px 0px;
+		-webkit-transition:all 0.25s ease-in-out;
+		-moz-transition:all 0.25s ease-in-out;
+		-o-transition:all 0.25s ease-in-out;
+		transition:all 0.25s ease-in-out;
+		cursor: pointer;
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); 
+                filter: gray; 
+                -webkit-filter: grayscale(100%); 
+	}
+	.sticky li:hover{
+		margin-left: -115px;
+		/*-webkit-transform: translateX(-115px);
+		-moz-transform: translateX(-115px);
+		-o-transform: translateX(-115px);
+		-ms-transform: translateX(-115px);
+		transform:translateX(-115px);*/
+		/*background-color: #8e44ad;*/
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+                -webkit-filter: grayscale(0%);
+	}
+	.sticky li img{
+		float: left;
+		margin: 5px 5px;
+		margin-right: 10px;
+	}
+	.sticky li p{
+		padding: 0px;
+		margin: 0px;
+		text-transform: uppercase;
+		line-height: 43px;
+	}
+	/** content **/
+	.content{
+		margin-top: 150px;
+		margin-left: 100px;
+		width: 700px;
+	}
+	
+	/** fork icon**/
+	.fork{
+		position: absolute;
+		top:0px;
+		left: 0px;
+	}
+</style>
+<body>
+
+	<nav class="navbar navbar-custom navbar-nav navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-4">
+			<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#robust">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+</button>
+				<a href="#" class="navbar-brand">SCORPION</a>
+			</div>
+			
+			</div>
+			<div class="col-md-8">
+			<div class="collapse navbar-collapse" id="robust">
+				<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="technology.html">Technology</a></li>
+				<li><a href="websites gallery.html">WebSites Gallery</a></li>
+				<li><a href="About Us.html">About Us</a></li>
+				<li><a href="Contact Us.html">Contact Us</a></li>
+			</ul>
+			</div>
+			</div>
+		</div>
+		</div>
+	</nav>
+	
+	<div class="slider">
+	<div id="slider1" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#slider1" data-slide-to="0" class="active"></li>
+			<li data-target="#slider1" data-slide-to="1"></li>
+		</ol>
+
+
+		<div class="carousel-inner">
+		<div class="item active">
+			<img src="img3/12.jpg" alt="image">
+		<div class="carousel-caption wow bounceInRight" data-wow-duration="3s">
+		<a href=""><b>Welcome To Scorpion Informer</b></a>
+
+		</div>
+
+		</div>
+		<div class="item">
+			<img src="img3/DSC_1038.JPG" alt="image">
+		<div class="carousel-caption wow bounceInUp" data-wow-duration="3s">
+		<b>Web Designer Scorpion Informer</b>
+
+		</div>
+		</div>
+
+		</div>
+		<a href="#slider1" class="left carousel-control" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		
+		</a>
+		<a href="#slider1" class="right carousel-control" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		
+		</a>
+
+
+
+	</div>
+
+	</div>
+	
+	<div class="container">
+	<center><strong id="Services">Services</strong></center><br>
+		<center><p style="font-size:24px;">We Create user interface and modern Websites.we will help you build strong online<br> business by creating professional website which best suits your needs.</p></center>
+	<br><br><br>
+	<div class="row">
+	<div class="col-md-3">
+		<div class="col1 wow fadeInLeft" data-wow-duration="4.5s">
+		<center>
+		<div class="icons"><i class="fa fa-laptop"></i>
+		</div>
+		<strong style="font-size:22px;">Web Design</strong><br>
+		<p style="font-size:16px; motgin-top:20px;">Web design encomposses many different skills and discliplines in the production and maintenance of websites. The different areas of web design include web graphic design, interface design, authoring.</p>
+		<a href="#" class="btn btn-primary">Read More</a>
+
+		</center>
+
+	</div>
+	</div>
+		<div class="col-md-3">
+		<div class="col1 wow fadeInLeft" data-wow-duration="4s">
+		<center>
+		<div class="icons"><i class="fa fa-mobile"></i>
+		</div>
+		<strong style="font-size:22px;">Mobile Development</strong><br>
+		<p style="font-size:16px; motgin-top:20px;">Mobile app development is a term used to donate the act or process by which a mobile app is developed for mobile devices. such as persnol digital assistants, enterprise digital assistants or mobile phones.</p>
+		<a href="#" class="btn btn-primary">Read More</a>
+
+		</center>
+
+	</div>
+	</div>
+		<div class="col-md-3">
+		<div class="col1 wow fadeInLeft" data-wow-duration="3.5s">
+		<center>
+		<div class="icons"><i class="fa fa-cogs"></i>
+		</div>
+		<strong style="font-size:22px;">Software Development</strong><br>
+		<p style="font-size:16px; motgin-top:20px;">Process of conceiving, specifying, designing, programming, documenting, testing. and bug fixing involved in creating and maintaining applications.</p>
+		<a href="#" class="btn btn-primary">Read More</a>
+
+		</center>
+
+	</div>
+	</div>
+		<div class="col-md-3">
+		<div class="col1 wow fadeInLeft" data-wow-duration="3s">
+		<center>
+		<div class="icons"><i class="fa fa-signal"></i>
+		</div>
+		<strong style="font-size:22px;">SEO</strong><br>
+		<p style="font-size:16px; motgin-top:20px;">It's defined as a group of two or more computer systems linked together. Likes LAN, WAN ,Etc....<br>Computer & Mobile networks are made up of wired of wireless communication pathways that transmit data. </p>
+		<a href="#" class="btn btn-primary">Read More</a>
+
+		</center>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	<div id="about">
+		<div class="container">
+
+	<center><strong id="aboutcompany">Contact Us</strong></center><br><br><br>
+		<div class="row">
+		<div class="col-md-6">
+			
+			<img src="img3/DSC_1038.JPG" class="img-responsive">
+
+		</div>
+		<div class="col-md-6">
+		<p style="color:#fff;">
+			
+			<br><br><a href="tel:+918762826199" class="btn btn-primary1">Call.....<i class="fa fa-phone"></i></a>
+			<br><br><a href="#" class="btn btn-primary1">Facebook.....<i class="fa fa-facebook"></i></a>
+			<br><br><a href="#" class="btn btn-primary1">Whatsapp.....<i class="fa fa-whatsapp"></i></a>
+			<br><br><a href="#" class="btn btn-primary1">scorpioninformer123@gmail.com.....<i class="fa fa-share"></i></a>
+
+		</p>
+		<h4 style="color:#fff;"> PHP</h4>
+		<div id="php" style="color:#fff;"></div>
+		<h4 style="color:#fff;"> JQUERY</h4>
+		<div id="php1" style="color:#fff;"></div>
+		<h4 style="color:#fff;"> BOOTSTRAP</h4>
+		<div id="php2" style="color:#fff;"></div>
+		<h4 style="color:#fff;"> CSS3</h4>
+		<div id="php3" style="color:#fff;"></div>
+		</div></div>
+	</div>
+	</div>
+	
+	</div>
+
+	<div id="team">
+	<div class="container">
+
+	<div class="row">
+		<center><strong id="ourteam">WHAT'S NEXT</strong></center><br><br>
+	<div class="col-md-3">
+		<div class="team-member wow fadeInLeft" data-wow-duration="5s">
+		<img src="img3/tutorial2.png" class="img-responsive">
+			<h3>TUTORIALS</h3>
+			<strong></strong>
+			<p>Build a simple app in minutes. Master advanced concepts and techniques.</p>
+			<a href="#" class="btn btn-primary2">Read More</a>
+	</div>
+
+	</div>
+		<div class="col-md-3">
+		<div class="team-member wow fadeInLeft" data-wow-duration="4s">
+		<img src="img3/Guide.jpg" class="img-responsive">
+			<h3>GUIDE</h3>
+			<strong></strong>
+			<p>Best practices for building production aweesome apps.</p>
+			<a href="#" class="btn btn-primary2">Read More</a>
+	</div>
+
+	</div>
+		<div class="col-md-3">
+		<div class="team-member wow fadeInLeft" data-wow-duration="3s">
+		<img src="img3/documentation.jpg" class="img-responsive">
+			<h3>Documentation</h3>
+			<strong></strong>
+			<p>Reference documentation to discover everything has to offer.</p>
+			<a href="#" class="btn btn-primary2">Read More</a>
+ 
+	</div>
+
+	</div>
+		<div class="col-md-3">
+		<div class="team-member wow fadeInLeft" data-wow-duration="2s">
+		<img src="img3/support .jpg" class="img-responsive">
+			<h3>Support</h3>
+			<strong></strong>
+			<p>It's supports Mobiles, Notebook, Macbook, Desktops. It's supports All versions.</p>
+			<a href="#" class="btn btn-primary2">Read More</a>
+	</div>
+
+	</div>
+	</div>
+	</div>
+
+	</div>
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+<br>
+						<h2 style="color: #fff;text-align: center;border-bottom-style: ridge;border-bottom-color: #e8491d;">Scorpion Informer</h2><br><br>
+						<p style="color: #fff;text-align: center;">We are a studio that aims to make our users experience easier and much more pleasent.
+						You probably won't have a opportunity to make sure of our competence, as well as freindlines towards our customers.</p>
+					</div>
+				<div class="col-md-4">
+<br>
+						<h2 style="color: #fff;text-align: center;border-bottom-style: ridge;border-bottom-color: #e8491d;">Service</h2><br><br>
+						<p style="color: #fff;text-align: center;">Software Development<br>Mobile Development<br>Web Development<br>Web Design</p>
+					</div>
+					<div class="col-md-4">
+<br>
+						<h2 style="color: #fff;text-align: center;border-bottom-style: ridge;border-bottom-color: #e8491d;">Company</h2><br><br>
+						<p style="color: #fff;text-align: center;">You probably won't have a opportunity to make sure of our competence, as well as freindlines towards our customers.</p>
+					</div>
+					
+				</div>
+				</div>
+				</div>
+			</div>
+
+
+		</div>
+<div class="fork">
+	
+	</div>
+	<div class="sticky-container">
+		<ul class="sticky">
+			<li>
+				<a href="http://www.facebook.com/sharer.php?u=111111111111"><img width="32" height="32" title="" alt="" src="img/fb1.png" /></a>
+				<p style="color: #fff;><a href="http://www.facebook.com/sharer.php?u=111111111111">Facebook</p></a>
+			</li>
+			<li>
+				<a href="whatsapp://send?text=111111111111"><img width="32" height="32" title="" alt="" src="img/whatsapp.png" /></a>
+				<p style="color: #fff;><a href="whatsapp://send?text=111111111111">Whatsapp</p></a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/share?url=11111111111"><img width="32" height="32" title="" alt="" src="img/google+.png" />
+				<p style="color: #fff;><a href="https://plus.google.com/share?url=11111111111">Google +</p>
+			</li>
+			
+			<li>
+				<a href="https://plus.google.com/share?url=11111111111111"><img width="32" height="32" title="" alt="" src="img/google.png" /></a>
+				<p style="color: #fff;><a href="https://plus.google.com/share?url=11111111111111">Google</p></a>
+			</li>
+			<li>
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url=11111111111"><img width="32" height="32" title="" alt="" src="img/li1.png" /></a>
+				<p style="color: #fff;><a href="http://www.linkedin.com/shareArticle?mini=true&url=11111111111">LinkedIn</p></a>
+			</li>
+			<li>
+				<a href="http://pinterest.com/pin/create/button/?url=1111111111&media=222222222"><img width="32" height="32" title="" alt="" src="img/pin1.png" /></a>
+				<p style="color: #fff;><a href="http://pinterest.com/pin/create/button/?url=1111111111&media=222222222">Pinterest</p></a>
+			</li>
+			<li>
+				<a href="http://twitter.com/share?url=111111111"><img width="32" height="32" title="" alt="" src="img/tw1.png" /></a>
+				<p style="color: #fff;><a href="http://twitter.com/share?url=111111111">Twitter</p></a>
+			</li>
+			<li>
+				<a href="mailto:?subject=Scorpion_Informer&body=Check out this site[scorpioninformer123@gmail.com]"><img width="32" height="32" title="" alt="" src="img/email.jpg" /></a>
+				<p style="color: #fff;><a href="mailto:?subject=Scorpion_Informer&body=Check out this site[scorpioninformer123@gmail.com]">Email</p></a>
+			</li>
+			<li>
+				<a href="http://www.reddit.com/submit?url=1111111111111"><img width="32" height="32" title="" alt="" src="img/reddit.png" /></a>
+				<p style="color: #fff;><a href="http://www.reddit.com/submit?url=1111111111111">reddit</p></a>
+			</li>
+			<li>
+				<a href="http://www.stumbleupon.com/badge/?url=11111111111"><img width="32" height="32" title="" alt="" src="img/tm1.png" /></a>
+				<p style="color: #fff;><a href="http://www.stumbleupon.com/badge/?url=11111111111">thumblr</p></a>
+			</li>
+		</ul>
+	</div>
+	<div class="content">
+		
+	</div>
+
+	
+		<script>
+		$(document).ready(function(){
+
+$('#php').LineProgressbar({
+	percentage: 95,
+	fillBackgroundColor: '#82c434',
+	height: '20px'
+	});
+$('#php1').LineProgressbar({
+	percentage: 70,
+	fillBackgroundColor: 'yellow',
+	height: '20px'
+	});
+$('#php2').LineProgressbar({
+	percentage: 60,
+	fillBackgroundColor: 'red',
+	height: '20px'
+	});
+$('#php3').LineProgressbar({
+	percentage: 90,
+	fillBackgroundColor: 'green',
+	height: '20px'
+	});
+});
+		</script>
+<script src="js/wow.min.js"></script>
+	<script>
+	new WOW().init();
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

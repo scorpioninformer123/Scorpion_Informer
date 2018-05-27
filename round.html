@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		body{
+			background: #999;
+		}
+		.ana {
+			transform: rotate(45deg);
+			margin: 150px auto;
+			position: relative;
+			width:200px;
+			height: 200px;
+			padding: 0;
+			
+		}
+input[type="checkbox"] {
+z-index:2;
+	-webkit-appearance: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+	background: #000;
+	border-radius: 100%;
+	outline: none;
+	transform: translate(-50%,-50%) rotate(-45deg);
+	}
+input[type="checkbox"]:before {
+		
+		cursor: pointer;
+		position: absolute;
+		width:100%;
+		height: 100%;
+		content: 'MENU';
+		color: #fff;
+		background: darkblue;
+		border-radius: 50px;
+		text-align: center;
+		line-height: 50px;
+	}
+	.menu1, .menu2, .menu3, .menu4, .menu5 {
+		width: 50px;
+		height: 50px;
+		background: cornflowerblue;
+		border: 2px solid #fff;
+		border-radius: 50px;
+		color: #fff;
+		text-align: center;
+		line-height: 50px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		transition: all 1s;
+	}
+	input[type="checkbox"]:checked ~ .menu1 {
+
+	left: 0;
+	top: 50%;
+	}
+	input[type="checkbox"]:checked ~ .menu2 {
+
+	left: 50%;
+	top: 0;
+	}
+	input[type="checkbox"]:checked ~ .menu3 {
+
+	left: 100%;
+	top: 50%;
+	}
+	input[type="checkbox"]:checked ~ .menu4 {
+
+	left: 50%;
+	top: 100%;
+	}
+	input[type="checkbox"]:checked ~ .menu5 {
+
+	left: 25%;
+	top: 50%;
+	}
+	</style>
+<head>
+<body>
+<div class="ana">
+<input type="checkbox">
+
+	<div class="menu1">&#10049;</div>
+	<div class="menu2">&#9993;</div>
+	<div class="menu3">&#9992;</div>
+	<div class="menu4">&#9875;</div>
+	<div class="menu5">SLN HOME DESIGNS</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+html, body {
+	padding:0px;
+	height: 100%;
+	margin:0px;
+}
+body {
+	font-size:14px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.your-css {
+	width:100%;
+	margin: auto;
+}
+h2{
+	font-size: 1.6em;
+	color: #666;
+	text-transform: uppercase;
+}
+h3{
+	font-size: 1.3em;
+	color: #333;
+	text-transform: uppercase;
+}

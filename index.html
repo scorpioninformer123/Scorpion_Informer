@@ -12,7 +12,44 @@
 
   
 </head>
- 
+ <style>
+    #main{
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    top:-5%;
+    left: 40%;
+    perspective: 800px;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#box{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #3F0063;
+    font-family: fantasy;
+    font-size: 32px;
+    color:#04C5D6;
+    text-align: center;
+    line-height: 70px;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 15px 30px rgba(59,2,97,.4);
+    transition: all .5s;
+}
+
+#main:hover #box{
+    color: #52Dee7;
+    background-color: #4A0472;
+    transform: rotateX(50deg);
+    text-shadow: 0 10px 10px rgba(0,0,0,.2);
+    box-shadow: 0 25px 30px rgba(59,2,97,.4);
+}
+#main:hover #boxBottom{
+    transform: rotateX(-70deg);
+}
+
+    </style>
 
 <body>
 
@@ -32,6 +69,7 @@ because it requires specific images, where more than 50% of bg is transparent or
           <div class="fnc-slide__mask">
             <div class="fnc-slide__mask-inner"></div>
           </div>
+            
           <div class="fnc-slide__content">
             <h2 class="fnc-slide__heading">
               <div class="fnc-slide__heading-line">
@@ -41,11 +79,12 @@ because it requires specific images, where more than 50% of bg is transparent or
                 <span>Home Designs</span>
               </div>
             </h2>
-            <button type="button" class="fnc-slide__action-btn">
-              MENU
-              <span data-text="MENU">MENU</span>
-            </button>
-          </div>
+            <div id="main" class="fnc-slide__action-btn">
+                <div id="box">
+                MENU
+                </div>
+            </div>
+            </div>
         </div>
       </div>
       <!-- slide end -->
@@ -64,10 +103,11 @@ because it requires specific images, where more than 50% of bg is transparent or
                 <span>Informer</span>
               </div>
             </h2>
-            <button type="button" class="fnc-slide__action-btn">
-             MENU
-              <span data-text="MENU">MENU</span>
-            </button>
+            <div id="main" class="fnc-slide__action-btn">
+                <div id="box">
+                MENU
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -87,10 +127,11 @@ because it requires specific images, where more than 50% of bg is transparent or
                 <span>Home Designs</span>
               </div>
             </h2>
-            <button type="button" class="fnc-slide__action-btn">
-              MENU
-              <span data-text="MENU">MENU</span>
-            </button>
+           <div id="main" class="fnc-slide__action-btn">
+                <div id="box">
+                MENU
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -111,10 +152,11 @@ because it requires specific images, where more than 50% of bg is transparent or
                   
               </div>
             </h2>
-            <button type="button" class="fnc-slide__action-btn">
-              MENU
-              <span data-text="MENU">MENU</span>
-            </button>
+            <div id="main" class="fnc-slide__action-btn">
+                <div id="box">
+                MENU
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -158,7 +200,7 @@ because it requires specific images, where more than 50% of bg is transparent or
     <a href="scorpioninformer/About Us.html" target="_blank" class="demo-cont__credits-link">About</a>
     <a href="scorpioninformer/Contact Us.html" target="_blank" class="demo-cont__credits-link">Contact Us</a>
     
-    
+     
     
     <h4 class="demo-cont__credits-blend">Scorpion Mode</h4>
       <a href="Animated-Login---Sign-Up-Form-master/index.html" target="_blank" class="demo-cont__credits-link">Log in</a>

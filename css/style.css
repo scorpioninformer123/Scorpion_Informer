@@ -501,15 +501,15 @@ body {
 }
 .example-slider .fnc-slide-1 .fnc-slide__inner,
 .example-slider .fnc-slide-1 .fnc-slide__mask-inner {
-  background-image: url("https://github.com/scorpioninformer123/S.L.N-Home-designs/blob/master/exterior/10.jpg?raw=true");
+  background-image: url("https://raw.githubusercontent.com/scorpioninformer123/Scorpion_Informer/gh-pages/css/10.jpg");
 }
 .example-slider .fnc-slide-2 .fnc-slide__inner,
 .example-slider .fnc-slide-2 .fnc-slide__mask-inner {
-  background-image: url("https://raw.githubusercontent.com/scorpioninformer123/Scorpion_Informer/gh-pages/scorpioninformer/img/88.jpg");
+  background-image: url("https://raw.githubusercontent.com/scorpioninformer123/Scorpion_Informer/gh-pages/css/88.jpg");
 }
 .example-slider .fnc-slide-3 .fnc-slide__inner,
 .example-slider .fnc-slide-3 .fnc-slide__mask-inner {
-  background-image: url("https://github.com/scorpioninformer123/S.L.N-Home-designs/blob/master/exterior/56.jpg?raw=true");
+  background-image: url("https://raw.githubusercontent.com/scorpioninformer123/Scorpion_Informer/gh-pages/css/56.jpg");
 }
 .example-slider .fnc-slide-3 .fnc-slide__inner:before {
   content: "";
@@ -522,7 +522,7 @@ body {
 }
 .example-slider .fnc-slide-4 .fnc-slide__inner,
 .example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-  background-image: url("https://raw.githubusercontent.com/scorpioninformer123/Scorpion_Informer/gh-pages/scorpioninformer/img/112.jpg");
+  background-image: url("https://raw.githubusercontent.com/scorpioninformer123/Scorpion_Informer/gh-pages/css/112.jpg");
 }
 .example-slider .fnc-slide-4 .fnc-slide__inner:before {
   content: "";

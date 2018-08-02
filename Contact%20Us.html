@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fancy Slider</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+ <style>
+    #main{
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    top:-5%;
+    left: 40%;
+    perspective: 800px;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#box{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #3F0063;
+    font-family: fantasy;
+    font-size: 32px;
+    color:#04C5D6;
+    text-align: center;
+    line-height: 70px;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 15px 30px rgba(59,2,97,.4);
+    transition: all .5s;
+}
+#main:hover #box{
+    color: #52Dee7;
+    background-color: #4A0472;
+    transform: rotateX(50deg);
+    text-shadow: 0 10px 10px rgba(0,0,0,.2);
+    box-shadow: 0 25px 30px rgba(59,2,97,.4);
+}
+#main:hover #boxBottom{
+    transform: rotateX(-70deg);
+}
+    </style>
+
+<body>
+
+  <!-- 
+Please note, that you can apply .m--global-blending-active to .fnc-slider 
+to enable blend-mode for all background-images or apply .m--blend-bg-active
+to some specific slides (.fnc-slide). It's disabled by default in this demo,
+because it requires specific images, where more than 50% of bg is transparent or monotone
+-->
+<div class="demo-cont">
+  <!-- slider start -->
+  <div class="fnc-slider example-slider">
+    <div class="fnc-slider__slides">
+      <!-- slide start -->
+      <div class="fnc-slide m--blend-green m--active-slide">
+        <div class="fnc-slide__inner">
+          <div class="fnc-slide__mask">
+            <div class="fnc-slide__mask-inner"></div>
+          </div>
+            
+          <div class="fnc-slide__content">
+            <h2 class="fnc-slide__heading">
+              <div class="fnc-slide__heading-line">
+                <span>S.L.N</span>
+              </div>
+              <div class="fnc-slide__heading-line">
+                <span>Home Designs</span>
+              </div>
+            </h2>
+            <div id="main" class="fnc-slide__action-btn">
+                <div id="box">
+                MENU
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      <!-- slide end -->
+      <!-- slide start -->
+      <div class="fnc-slide m--blend-dark">
+        <div class="fnc-slide__inner">
+          <div class="fnc-slide__mask">
+            <div class="fnc-slide__mask-inner"></div>
+          </div>
+          <div class="fnc-slide__content">
+            <h2 class="fnc-slide__heading">
+              <div class="fnc-slide__heading-line">
+                <span>Scorpion</span>
+              </div>
+              <div class="fnc-slide__heading-line">
+                <span>Informer</span>
+              </div>
+            </h2>
+            <div id="main" class="fnc-slide__action-btn">
+                <div id="box">
+                MENU
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide end -->
+      <!-- slide start -->
+      <div class="fnc-slide m--blend-red">
+        <div class="fnc-slide__inner">
+          <div class="fnc-slide__mask">
+            <div class="fnc-slide__mask-inner"></div>
+          </div>
+          <div class="fnc-slide__content">
+            <h2 class="fnc-slide__heading">
+              <div class="fnc-slide__heading-line">
+                <span>S.L.N</span>
+              </div>
+              <div class="fnc-slide__heading-line">
+                <span>Home Designs</span>
+              </div>
+            </h2>
+           <div id="main" class="fnc-slide__action-btn">
+                <div id="box">
+                MENU
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide end -->
+      <!-- slide start -->
+      <div class="fnc-slide m--blend-blue">
+        <div class="fnc-slide__inner">
+          <div class="fnc-slide__mask">
+            <div class="fnc-slide__mask-inner"></div>
+          </div>
+          <div class="fnc-slide__content">
+            <h2 class="fnc-slide__heading">
+              <div class="fnc-slide__heading-line">
+                <span>Scorpion</span>
+              </div>
+              <div class="fnc-slide__heading-line">
+                  <span>Informer</span>
+                  
+              </div>
+            </h2>
+            <div id="main" class="fnc-slide__action-btn">
+                <div id="box">
+                MENU
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide end -->
+    </div>
+    <nav class="fnc-nav">
+      <div class="fnc-nav__bgs">
+        <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+        <div class="fnc-nav__bg m--navbg-dark"></div>
+        <div class="fnc-nav__bg m--navbg-red"></div>
+        <div class="fnc-nav__bg m--navbg-blue"></div>
+      </div>
+      <div class="fnc-nav__controls">
+        <button class="fnc-nav__control">
+          S.L.N Home Designs
+          <span class="fnc-nav__control-progress"></span>
+        </button>
+        <button class="fnc-nav__control">
+          Scorpion Informer
+          <span class="fnc-nav__control-progress"></span>
+        </button>
+        <button class="fnc-nav__control">
+          S.L.N Home Designs
+          <span class="fnc-nav__control-progress"></span>
+        </button>
+        <button class="fnc-nav__control">
+          Scorpion Informer
+          <span class="fnc-nav__control-progress"></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+  <!-- slider end -->
+  <div class="demo-cont__credits">
+    <div class="demo-cont__credits-close"></div>
+    <h2 class="demo-cont__credits-heading">MENU</h2>
+    <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt="" class="demo-cont__credits-img" />
+    <a href="scorpioninformer/index.html" target="_blank" class="demo-cont__credits-link">Home</a>
+    <a href="scorpioninformer/technology.html" target="_blank" class="demo-cont__credits-link">Technology</a>
+    <a href="scorpioninformer/websites gallery.html" target="_blank" class="demo-cont__credits-link">Gallery</a>
+    <a href="scorpioninformer/About Us.html" target="_blank" class="demo-cont__credits-link">About</a>
+    <a href="scorpioninformer/Contact Us.html" target="_blank" class="demo-cont__credits-link">Contact Us</a>
+    
+     
+    
+    <h4 class="demo-cont__credits-blend">Scorpion Mode</h4>
+      <a href="Animated-Login---Sign-Up-Form-master/index.html" target="_blank" class="demo-cont__credits-link">Log in</a>
+    <div class="colorful-switch">
+      <input type="checkbox" class="colorful-switch__checkbox js-activate-global-blending" id="colorful-switch-cb" />
+        
+      <label class="colorful-switch__label" for="colorful-switch-cb">
+        <span class="colorful-switch__bg"></span>
+        <span class="colorful-switch__dot"></span>
+        <span class="colorful-switch__on">
+          <span class="colorful-switch__on__inner"></span>
+        </span>
+        <span class="colorful-switch__off"></span>
+      </label>
+    </div>
+  </div>
+</div>
+  
+  
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

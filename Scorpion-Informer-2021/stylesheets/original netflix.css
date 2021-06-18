@@ -1,0 +1,2367 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
+/* line 31, ../sass/_template.scss */
+body, html {
+  margin: 0em;
+  padding: 0em;
+}
+
+/* line 36, ../sass/_template.scss */
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
+  margin: 0em;
+  padding: 0em;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 44, ../sass/_template.scss */
+button {
+  border: none;
+  outline: none;
+}
+/* line 47, ../sass/_template.scss */
+button:hover {
+  cursor: pointer;
+}
+
+/* line 4, ../sass/_global.scss */
+body {
+  background: #f2f2f2;
+}
+
+/* line 8, ../sass/_global.scss */
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 13, ../sass/_global.scss */
+.landing-container {
+  background-size: cover;
+}
+/* line 15, ../sass/_global.scss */
+.landing-container .landing-wrapper {
+  overflow: hidden;
+}
+
+/* line 23, ../sass/_global.scss */
+.nav-mobile {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background: #191919;
+  z-index: 999;
+}
+/* line 30, ../sass/_global.scss */
+.nav-mobile .nav-title a {
+  color: #f2f2f2;
+}
+
+/* line 35, ../sass/_global.scss */
+.mobile {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 39, ../sass/_global.scss */
+.mobile .mobile-display {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  position: relative;
+}
+/* line 47, ../sass/_global.scss */
+.mobile .landing-display video {
+  filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.6));
+  -webkit-filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.6));
+  -moz-filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.6));
+  border-radius: 5px;
+  position: relative;
+}
+/* line 53, ../sass/_global.scss */
+.mobile .landing-footnote {
+  color: #ef3e3a;
+}
+/* line 59, ../sass/_global.scss */
+.mobile .intro-display {
+  justify-content: center;
+  align-items: center;
+}
+/* line 61, ../sass/_global.scss */
+.mobile .intro-display video {
+  filter: drop-shadow(0px 0px 5px #000000);
+  -webkit-filter: drop-shadow(0px 0px 5px #000000);
+  -moz-filter: drop-shadow(0px 0px 5px #000000);
+}
+/* line 66, ../sass/_global.scss */
+.mobile .intro-content .intro-list {
+  width: 100%;
+  height: 100%;
+}
+/* line 68, ../sass/_global.scss */
+.mobile .intro-content .intro-list li {
+  display: flex;
+  flex-flow: wrap row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+/* line 72, ../sass/_global.scss */
+.mobile .intro-content .intro-list li .nums {
+  color: #ef3e3a;
+}
+/* line 80, ../sass/_global.scss */
+.mobile .show-display {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+/* line 83, ../sass/_global.scss */
+.mobile .show-display .show-colOne, .mobile .show-display .show-colTwo, .mobile .show-display .show-colThree, .mobile .show-display .show-colFour {
+  display: flex;
+  flex-flow: column;
+  width: 22%;
+  height: 100%;
+}
+/* line 86, ../sass/_global.scss */
+.mobile .show-display .show-colOne img, .mobile .show-display .show-colTwo img, .mobile .show-display .show-colThree img, .mobile .show-display .show-colFour img {
+  filter: drop-shadow(0px 0px 10px #000000);
+  -webkit-filter: drop-shadow(0px 0px 10px #000000);
+  -moz-filter: drop-shadow(0px 0px 10px #000000);
+  width: 100%;
+}
+/* line 93, ../sass/_global.scss */
+.mobile .show-content h2 {
+  color: #ef3e3a;
+}
+/* line 96, ../sass/_global.scss */
+.mobile .show-content p {
+  color: #f2f2f2;
+}
+/* line 102, ../sass/_global.scss */
+.mobile .sync-display {
+  margin: 0 auto;
+}
+/* line 105, ../sass/_global.scss */
+.mobile .sync-display .sync-vid-wrap .sync-vid {
+  position: absolute;
+}
+/* line 111, ../sass/_global.scss */
+.mobile .sync-content h2 {
+  color: #ef3e3a;
+}
+/* line 114, ../sass/_global.scss */
+.mobile .sync-content p {
+  color: #f2f2f2;
+}
+/* line 120, ../sass/_global.scss */
+.mobile .friend-display {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  margin: 0 auto;
+}
+/* line 124, ../sass/_global.scss */
+.mobile .friend-display .friend-vidWrap {
+  position: relative;
+  text-align: center;
+}
+/* line 127, ../sass/_global.scss */
+.mobile .friend-display .friend-vidWrap img {
+  filter: drop-shadow(0px 0px 5px #000000);
+  -webkit-filter: drop-shadow(0px 0px 5px #000000);
+  -moz-filter: drop-shadow(0px 0px 5px #000000);
+}
+/* line 130, ../sass/_global.scss */
+.mobile .friend-display .friend-vidWrap .friend-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, #191919 0%, rgba(25, 25, 25, 0.5) 50%, rgba(25, 25, 25, 0) 100%);
+  position: absolute;
+}
+/* line 138, ../sass/_global.scss */
+.mobile .friend-content h2 {
+  color: #ef3e3a;
+}
+/* line 141, ../sass/_global.scss */
+.mobile .friend-content p {
+  color: #f2f2f2;
+}
+/* line 148, ../sass/_global.scss */
+.mobile .question-discord .question-wrap {
+  text-align: center;
+}
+/* line 150, ../sass/_global.scss */
+.mobile .question-discord .question-wrap h2 {
+  color: #f2f2f2;
+}
+/* line 153, ../sass/_global.scss */
+.mobile .question-discord .question-wrap a button {
+  border-radius: 25px;
+  background: #f2f2f2;
+}
+
+/* line 164, ../sass/_global.scss */
+.nav-desktop {
+  width: 100%;
+  height: 65px;
+  background: #191919;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  justify-content: space-between;
+}
+/* line 172, ../sass/_global.scss */
+.nav-desktop .nav-title a {
+  transition: 0.2s;
+  color: #f2f2f2;
+}
+/* line 175, ../sass/_global.scss */
+.nav-desktop .nav-title a:hover {
+  color: #ef3e3a;
+}
+/* line 181, ../sass/_global.scss */
+.nav-desktop .nav-btn a button {
+  border-radius: 25px;
+  color: #000000;
+  background: #f2f2f2;
+  transition: 0.2s;
+}
+/* line 186, ../sass/_global.scss */
+.nav-desktop .nav-btn a button:hover {
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.9));
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.9));
+  -moz-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.9));
+  color: #f2f2f2;
+  background: #ef3e3a;
+}
+
+/* line 194, ../sass/_global.scss */
+.desktop {
+  position: relative;
+}
+/* line 196, ../sass/_global.scss */
+.desktop .content {
+  position: relative;
+}
+/* line 200, ../sass/_global.scss */
+.desktop a button {
+  border-radius: 25px;
+  transition: 0.2s;
+}
+/* line 203, ../sass/_global.scss */
+.desktop a button:hover {
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.9));
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.9));
+  -moz-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.9));
+  cursor: pointer;
+}
+/* line 209, ../sass/_global.scss */
+.desktop .mini-title {
+  display: flex;
+  flex-flow: wrap row;
+  width: 100%;
+  align-items: center;
+}
+/* line 213, ../sass/_global.scss */
+.desktop .mini-title .line {
+  border-radius: 25px;
+}
+/* line 220, ../sass/_global.scss */
+.desktop .landing-content .landing-btn {
+  background: #b969a9;
+  background: -moz-linear-gradient(left, #b969a9 0%, #ef3e3a 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #b969a9), color-stop(100%, #ef3e3a));
+  background: -webkit-linear-gradient(left, #b969a9 0%, #ef3e3a 100%);
+  background: -o-linear-gradient(left, #b969a9 0%, #ef3e3a 100%);
+  background: -ms-linear-gradient(left, #b969a9 0%, #ef3e3a 100%);
+  background: linear-gradient(to right, #b969a9 0%, #ef3e3a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b969a9', endColorstr='#ef3e3a', GradientType=1 );
+  color: #f2f2f2;
+}
+/* line 224, ../sass/_global.scss */
+.desktop .landing-content .landing-footnote {
+  color: #4d4e4e;
+}
+/* line 229, ../sass/_global.scss */
+.desktop .landing-display video {
+  filter: drop-shadow(0px 0px 10px #000000);
+  -webkit-filter: drop-shadow(0px 0px 10px #000000);
+  -moz-filter: drop-shadow(0px 0px 10px #000000);
+  border-radius: 5px;
+}
+/* line 236, ../sass/_global.scss */
+.desktop .intro-content {
+  width: 100%;
+  height: 100%;
+}
+/* line 238, ../sass/_global.scss */
+.desktop .intro-content .intro-top {
+  display: flex;
+  flex-flow: column;
+}
+/* line 240, ../sass/_global.scss */
+.desktop .intro-content .intro-top .intro-miniTitle {
+  width: 100%;
+}
+/* line 242, ../sass/_global.scss */
+.desktop .intro-content .intro-top .intro-miniTitle .line {
+  width: 20px;
+  height: 3px;
+  background: #b969a9;
+  background: -moz-linear-gradient(left, #b969a9 0%, #ef3e3a 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #b969a9), color-stop(100%, #ef3e3a));
+  background: -webkit-linear-gradient(left, #b969a9 0%, #ef3e3a 100%);
+  background: -o-linear-gradient(left, #b969a9 0%, #ef3e3a 100%);
+  background: -ms-linear-gradient(left, #b969a9 0%, #ef3e3a 100%);
+  background: linear-gradient(to right, #b969a9 0%, #ef3e3a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b969a9', endColorstr='#ef3e3a', GradientType=1 );
+  margin-right: 0.5em;
+}
+/* line 247, ../sass/_global.scss */
+.desktop .intro-content .intro-top .intro-miniTitle p {
+  color: #303030;
+}
+/* line 251, ../sass/_global.scss */
+.desktop .intro-content .intro-top .intro-title {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  width: 100%;
+}
+/* line 255, ../sass/_global.scss */
+.desktop .intro-content .intro-top .intro-title a button {
+  background: #b969a9;
+  background: -moz-linear-gradient(left, #b969a9 0%, #ef3e3a 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #b969a9), color-stop(100%, #ef3e3a));
+  background: -webkit-linear-gradient(left, #b969a9 0%, #ef3e3a 100%);
+  background: -o-linear-gradient(left, #b969a9 0%, #ef3e3a 100%);
+  background: -ms-linear-gradient(left, #b969a9 0%, #ef3e3a 100%);
+  background: linear-gradient(to right, #b969a9 0%, #ef3e3a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b969a9', endColorstr='#ef3e3a', GradientType=1 );
+  color: #f2f2f2;
+}
+/* line 261, ../sass/_global.scss */
+.desktop .intro-content .intro-wrap {
+  display: flex;
+  flex-flow: wrap row;
+}
+/* line 263, ../sass/_global.scss */
+.desktop .intro-content .intro-wrap .intro-display {
+  position: relative;
+  right: 10vw;
+}
+/* line 266, ../sass/_global.scss */
+.desktop .intro-content .intro-wrap .intro-display video {
+  width: 110%;
+}
+/* line 270, ../sass/_global.scss */
+.desktop .intro-content .intro-wrap .intro-list {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+}
+/* line 273, ../sass/_global.scss */
+.desktop .intro-content .intro-wrap .intro-list li {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+/* line 276, ../sass/_global.scss */
+.desktop .intro-content .intro-wrap .intro-list li .nums {
+  color: #ef3e3a;
+  width: 100%;
+}
+/* line 280, ../sass/_global.scss */
+.desktop .intro-content .intro-wrap .intro-list li .num-title {
+  width: 100%;
+}
+/* line 287, ../sass/_global.scss */
+.desktop .intro-display {
+  width: 55%;
+  height: 100%;
+  order: 0;
+}
+/* line 290, ../sass/_global.scss */
+.desktop .intro-display video {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.6));
+  -webkit-filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.6));
+  -moz-filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.6));
+}
+/* line 298, ../sass/_global.scss */
+.desktop .explore-content h2 {
+  color: #ef3e3a;
+}
+/* line 301, ../sass/_global.scss */
+.desktop .explore-content p {
+  color: #f2f2f2;
+}
+/* line 306, ../sass/_global.scss */
+.desktop .explore-display {
+  position: relative;
+  display: flex;
+  flex-flow: wrap row;
+}
+/* line 313, ../sass/_global.scss */
+.desktop .show-display .show-colOne, .desktop .show-display .show-colTwo, .desktop .show-display .show-colThree, .desktop .show-display .show-colFour {
+  width: 22%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+/* line 316, ../sass/_global.scss */
+.desktop .show-display .show-colOne img, .desktop .show-display .show-colTwo img, .desktop .show-display .show-colThree img, .desktop .show-display .show-colFour img {
+  filter: drop-shadow(0px 0px 10px #000000);
+  -webkit-filter: drop-shadow(0px 0px 10px #000000);
+  -moz-filter: drop-shadow(0px 0px 10px #000000);
+  width: 100%;
+  padding: 0.5em 0em;
+}
+/* line 325, ../sass/_global.scss */
+.desktop .sync-display {
+  width: 50%;
+  height: 100%;
+}
+/* line 328, ../sass/_global.scss */
+.desktop .sync-display .sync-vid-wrap .sync-vid {
+  position: absolute;
+}
+/* line 331, ../sass/_global.scss */
+.desktop .sync-display .sync-vid-wrap .sync-vid-1 {
+  filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.6));
+  -webkit-filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.6));
+  -moz-filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.6));
+  width: 90%;
+}
+/* line 335, ../sass/_global.scss */
+.desktop .sync-display .sync-vid-wrap .sync-vid-2 {
+  filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.6));
+  -webkit-filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.6));
+  -moz-filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.6));
+  width: 50%;
+}
+/* line 344, ../sass/_global.scss */
+.desktop .emoji-overlay {
+  background: linear-gradient(360deg, #191919 0%, rgba(25, 25, 25, 0.5) 50%, rgba(25, 25, 25, 0) 100%);
+  z-index: 50;
+  position: absolute;
+  left: 0em;
+  bottom: 0em;
+}
+/* line 351, ../sass/_global.scss */
+.desktop .emoji {
+  position: absolute;
+  z-index: 10;
+}
+/* line 354, ../sass/_global.scss */
+.desktop .emoji img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0px 0px 5px #000000);
+  -webkit-filter: drop-shadow(0px 0px 5px #000000);
+  -moz-filter: drop-shadow(0px 0px 5px #000000);
+}
+/* line 359, ../sass/_global.scss */
+.desktop .friend-display {
+  justify-content: center;
+  align-items: center;
+}
+/* line 361, ../sass/_global.scss */
+.desktop .friend-display .friend-vidWrap {
+  position: relative;
+}
+/* line 363, ../sass/_global.scss */
+.desktop .friend-display .friend-vidWrap img {
+  filter: drop-shadow(0px 0px 5px #000000);
+  -webkit-filter: drop-shadow(0px 0px 5px #000000);
+  -moz-filter: drop-shadow(0px 0px 5px #000000);
+}
+/* line 366, ../sass/_global.scss */
+.desktop .friend-display .friend-vidWrap .friend-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, #191919 0%, rgba(25, 25, 25, 0.5) 50%, rgba(25, 25, 25, 0) 100%);
+  position: absolute;
+}
+/* line 375, ../sass/_global.scss */
+.desktop .cta-footer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 381, ../sass/_global.scss */
+.desktop .cta-footer .question-wrap .question-miniTitle .line {
+  width: 20px;
+  height: 3px;
+  margin-right: 0.5em;
+  background: #f2f2f2;
+}
+/* line 386, ../sass/_global.scss */
+.desktop .cta-footer .question-wrap .question-miniTitle p {
+  color: #f2f2f2;
+}
+/* line 390, ../sass/_global.scss */
+.desktop .cta-footer .question-wrap h2 {
+  color: #f2f2f2;
+}
+/* line 394, ../sass/_global.scss */
+.desktop .cta-footer .question-wrap a button {
+  background: #f2f2f2;
+  color: #000000;
+}
+/* line 399, ../sass/_global.scss */
+.desktop .cta-footer .question-wrap .np-btn {
+  background: #f2f2f2;
+  color: #000000;
+  border-radius: 25px;
+}
+/* line 407, ../sass/_global.scss */
+.desktop .question-join {
+  background: #ef3e3a;
+}
+/* line 410, ../sass/_global.scss */
+.desktop .question-discord {
+  background: #7289DA;
+}
+
+@media (min-width: 320px) {
+  /* line 7, ../sass/style.scss */
+  .desktop, .nav-desktop {
+    display: none;
+  }
+
+  /* line 11, ../sass/style.scss */
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    padding-bottom: 0.5em;
+  }
+
+  /* line 16, ../sass/style.scss */
+  .nav-mobile {
+    display: flex;
+    flex-flow: wrap row;
+  }
+  /* line 19, ../sass/style.scss */
+  .nav-mobile .nav-title a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15em;
+    font-weight: 700;
+  }
+
+  /* line 25, ../sass/style.scss */
+  .landing-container {
+    background: url(https://netflixparty.s3.amazonaws.com/img/land/land-bg.svg) no-repeat -11em 0em;
+    background-size: cover;
+  }
+  /* line 30, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-mobile .landing-display {
+    padding-top: 12vh;
+  }
+  /* line 32, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-mobile .landing-display video {
+    width: 130vw;
+    height: 100%;
+    right: 38vw;
+  }
+  /* line 37, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-mobile .landing-content {
+    padding: 1.5em 6vw 0em 6vw;
+  }
+  /* line 39, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-mobile .landing-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 1.3em;
+  }
+  /* line 43, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-mobile .landing-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 500;
+    padding: 1em 0em;
+    line-height: 1.45em;
+  }
+  /* line 48, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-mobile .landing-content .landing-footnote {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+    font-weight: 500;
+    padding-top: 1em;
+  }
+
+  /* line 57, ../sass/style.scss */
+  .intro-mobile {
+    padding-top: 4.5em;
+  }
+  /* line 60, ../sass/style.scss */
+  .intro-mobile .intro-display video {
+    width: 85%;
+    height: 100%;
+  }
+  /* line 64, ../sass/style.scss */
+  .intro-mobile .intro-content {
+    padding: 1.5em 6vw 3em 6vw;
+  }
+  /* line 67, ../sass/style.scss */
+  .intro-mobile .intro-content .intro-list li {
+    margin-bottom: 0.5em;
+  }
+  /* line 69, ../sass/style.scss */
+  .intro-mobile .intro-content .intro-list li .nums {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    width: 15%;
+  }
+  /* line 73, ../sass/style.scss */
+  .intro-mobile .intro-content .intro-list li p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 600;
+  }
+
+  /* line 81, ../sass/style.scss */
+  .show-mobile {
+    background: #191919;
+    padding-top: 3em;
+  }
+  /* line 84, ../sass/style.scss */
+  .show-mobile .show-display {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  /* line 87, ../sass/style.scss */
+  .show-mobile .show-display .show-colOne, .show-mobile .show-display .show-colTwo, .show-mobile .show-display .show-colThree, .show-mobile .show-display .show-colFour {
+    padding: 0em 0.15em;
+  }
+  /* line 89, ../sass/style.scss */
+  .show-mobile .show-display .show-colOne img, .show-mobile .show-display .show-colTwo img, .show-mobile .show-display .show-colThree img, .show-mobile .show-display .show-colFour img {
+    padding: 0.15em 0em;
+  }
+  /* line 94, ../sass/style.scss */
+  .show-mobile .show-content {
+    padding: 2em 6vw 0em 6vw;
+  }
+  /* line 96, ../sass/style.scss */
+  .show-mobile .show-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.45em;
+  }
+
+  /* line 103, ../sass/style.scss */
+  .sync-mobile {
+    background: #191919;
+    padding-top: 5em;
+  }
+  /* line 106, ../sass/style.scss */
+  .sync-mobile .sync-display {
+    width: 90%;
+    height: 100%;
+  }
+  /* line 108, ../sass/style.scss */
+  .sync-mobile .sync-display .sync-vid-wrap {
+    width: 100%;
+    height: 190px;
+  }
+  /* line 110, ../sass/style.scss */
+  .sync-mobile .sync-display .sync-vid-wrap .sync-vid-1 {
+    width: 100%;
+  }
+  /* line 113, ../sass/style.scss */
+  .sync-mobile .sync-display .sync-vid-wrap .sync-vid-2 {
+    width: 40%;
+    right: 0em;
+    bottom: 0em;
+  }
+  /* line 120, ../sass/style.scss */
+  .sync-mobile .sync-content {
+    padding: 2em 6vw 0em 6vw;
+  }
+  /* line 122, ../sass/style.scss */
+  .sync-mobile .sync-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.45em;
+  }
+
+  /* line 129, ../sass/style.scss */
+  .friend-mobile {
+    background: #191919;
+    padding-top: 5em;
+  }
+  /* line 132, ../sass/style.scss */
+  .friend-mobile .friend-display {
+    width: 90%;
+    height: 100%;
+  }
+  /* line 135, ../sass/style.scss */
+  .friend-mobile .friend-display .friend-vidWrap img {
+    width: 240px;
+  }
+  /* line 138, ../sass/style.scss */
+  .friend-mobile .friend-display .friend-vidWrap .friend-overlay {
+    top: 0.5em;
+  }
+  /* line 143, ../sass/style.scss */
+  .friend-mobile .friend-content {
+    padding: 2em 6vw 4em 6vw;
+  }
+  /* line 145, ../sass/style.scss */
+  .friend-mobile .friend-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.45em;
+  }
+
+  /* line 152, ../sass/style.scss */
+  .question-mobile {
+    background: #7289DA;
+    padding: 4em 0em;
+  }
+  /* line 155, ../sass/style.scss */
+  .question-mobile .question-discord {
+    padding: 0em 1em;
+  }
+  /* line 158, ../sass/style.scss */
+  .question-mobile .question-discord .question-wrap h2 {
+    padding-bottom: 0.35em;
+  }
+  /* line 161, ../sass/style.scss */
+  .question-mobile .question-discord .question-wrap .no-hover button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-top: 0.5em;
+    padding: 0.7em 4em;
+  }
+}
+@media (min-width: 375px) {
+  /* line 174, ../sass/style.scss */
+  .desktop, .nav-desktop {
+    display: none;
+  }
+
+  /* line 178, ../sass/style.scss */
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 1.3em;
+    padding-bottom: 0.6em;
+  }
+
+  /* line 184, ../sass/style.scss */
+  .nav-mobile {
+    display: flex;
+    flex-flow: wrap row;
+  }
+  /* line 187, ../sass/style.scss */
+  .nav-mobile .nav-title a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  /* line 193, ../sass/style.scss */
+  .landing-container {
+    background: url(https://netflixparty.s3.amazonaws.com/img/land/land-bg.svg) no-repeat -15em -4em;
+    background-size: cover;
+  }
+  /* line 198, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-mobile .landing-display {
+    padding-top: 12vh;
+  }
+  /* line 200, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-mobile .landing-display video {
+    width: 130vw;
+    height: 100%;
+    right: 38vw;
+  }
+  /* line 205, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-mobile .landing-content {
+    padding: 2.5em 8vw 0em 8vw;
+  }
+  /* line 207, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-mobile .landing-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.65em;
+    font-weight: 800;
+    line-height: 1.4em;
+  }
+  /* line 211, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-mobile .landing-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 500;
+    padding: 1em 0em;
+    line-height: 1.5em;
+  }
+  /* line 216, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-mobile .landing-content .landing-footnote {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    font-weight: 500;
+    padding-top: 1em;
+  }
+
+  /* line 225, ../sass/style.scss */
+  .intro-mobile {
+    padding-top: 4.5em;
+  }
+  /* line 228, ../sass/style.scss */
+  .intro-mobile .intro-display video {
+    width: 84%;
+    height: 100%;
+  }
+  /* line 232, ../sass/style.scss */
+  .intro-mobile .intro-content {
+    padding: 1.5em 8vw 3em 8vw;
+  }
+  /* line 235, ../sass/style.scss */
+  .intro-mobile .intro-content .intro-list li {
+    margin-bottom: 0.9em;
+  }
+  /* line 237, ../sass/style.scss */
+  .intro-mobile .intro-content .intro-list li .nums {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.45em;
+    font-weight: 700;
+    width: 15%;
+  }
+  /* line 241, ../sass/style.scss */
+  .intro-mobile .intro-content .intro-list li p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+
+  /* line 249, ../sass/style.scss */
+  .show-mobile {
+    background: #191919;
+    padding-top: 4em;
+  }
+  /* line 252, ../sass/style.scss */
+  .show-mobile .show-display {
+    width: 85%;
+    height: 100%;
+  }
+  /* line 254, ../sass/style.scss */
+  .show-mobile .show-display .show-colOne, .show-mobile .show-display .show-colTwo, .show-mobile .show-display .show-colThree, .show-mobile .show-display .show-colFour {
+    padding: 0em 0.25em;
+  }
+  /* line 256, ../sass/style.scss */
+  .show-mobile .show-display .show-colOne img, .show-mobile .show-display .show-colTwo img, .show-mobile .show-display .show-colThree img, .show-mobile .show-display .show-colFour img {
+    padding: 0.25em 0em;
+  }
+  /* line 261, ../sass/style.scss */
+  .show-mobile .show-content {
+    padding: 2em 8vw 0em 8vw;
+  }
+  /* line 263, ../sass/style.scss */
+  .show-mobile .show-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.7em;
+  }
+
+  /* line 270, ../sass/style.scss */
+  .sync-mobile {
+    background: #191919;
+    padding-top: 5em;
+  }
+  /* line 273, ../sass/style.scss */
+  .sync-mobile .sync-display {
+    width: 85%;
+    height: 100%;
+  }
+  /* line 275, ../sass/style.scss */
+  .sync-mobile .sync-display .sync-vid-wrap {
+    width: 100%;
+    height: 210px;
+  }
+  /* line 277, ../sass/style.scss */
+  .sync-mobile .sync-display .sync-vid-wrap .sync-vid-1 {
+    width: 100%;
+  }
+  /* line 280, ../sass/style.scss */
+  .sync-mobile .sync-display .sync-vid-wrap .sync-vid-2 {
+    width: 50%;
+    right: 0em;
+    bottom: 0em;
+  }
+  /* line 287, ../sass/style.scss */
+  .sync-mobile .sync-content {
+    padding: 4em 8vw 0em 8vw;
+  }
+  /* line 289, ../sass/style.scss */
+  .sync-mobile .sync-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.7em;
+  }
+
+  /* line 296, ../sass/style.scss */
+  .friend-mobile {
+    background: #191919;
+    padding-top: 5em;
+  }
+  /* line 299, ../sass/style.scss */
+  .friend-mobile .friend-display {
+    width: 90%;
+    height: 100%;
+  }
+  /* line 302, ../sass/style.scss */
+  .friend-mobile .friend-display .friend-vidWrap img {
+    width: 270px;
+  }
+  /* line 305, ../sass/style.scss */
+  .friend-mobile .friend-display .friend-vidWrap .friend-overlay {
+    top: 0.5em;
+  }
+  /* line 310, ../sass/style.scss */
+  .friend-mobile .friend-content {
+    padding: 2em 8vw 4em 8vw;
+  }
+  /* line 312, ../sass/style.scss */
+  .friend-mobile .friend-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.7em;
+  }
+
+  /* line 319, ../sass/style.scss */
+  .question-mobile {
+    background: #7289DA;
+    padding: 6em 0em;
+  }
+  /* line 322, ../sass/style.scss */
+  .question-mobile .question-discord {
+    padding: 0em 1em;
+  }
+  /* line 325, ../sass/style.scss */
+  .question-mobile .question-discord .question-wrap h2 {
+    padding-bottom: 0.3em;
+  }
+  /* line 328, ../sass/style.scss */
+  .question-mobile .question-discord .question-wrap .no-hover button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em 3em;
+    margin-top: 0.5em;
+  }
+}
+@media (min-width: 768px) {
+  /* line 341, ../sass/style.scss */
+  .mobile, .nav-mobile {
+    display: none;
+  }
+
+  /* line 345, ../sass/style.scss */
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 0em;
+    margin-bottom: 0.5em;
+  }
+
+  /* line 351, ../sass/style.scss */
+  .nav-desktop {
+    display: flex;
+    flex-flow: wrap row;
+  }
+  /* line 353, ../sass/style.scss */
+  .nav-desktop .nav-title {
+    padding-left: 6vw;
+  }
+  /* line 355, ../sass/style.scss */
+  .nav-desktop .nav-title a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+  /* line 359, ../sass/style.scss */
+  .nav-desktop .nav-btn {
+    padding-right: 6vw;
+  }
+  /* line 361, ../sass/style.scss */
+  .nav-desktop .nav-btn a button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    font-weight: 600;
+    padding: 0.8em 2em;
+  }
+
+  /* line 368, ../sass/style.scss */
+  .landing-container {
+    background: url(https://netflixparty.s3.amazonaws.com/img/land/land-bg.svg) no-repeat 21vw 0em;
+    background-size: cover;
+  }
+  /* line 371, ../sass/style.scss */
+  .landing-container .landing-wrapper {
+    overflow: hidden;
+  }
+  /* line 373, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16vh 6vw;
+  }
+  /* line 378, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content {
+    width: 45%;
+  }
+  /* line 380, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+  }
+  /* line 384, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content .landing-info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 500;
+    line-height: 1.4em;
+    margin-top: 1em;
+  }
+  /* line 389, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content .landing-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    font-weight: 500;
+    margin-top: 1em;
+    padding: 0.9em 2em;
+  }
+  /* line 394, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content .landing-footnote {
+    margin-top: 0.85em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+    font-weight: 400;
+  }
+  /* line 399, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-display {
+    width: 50%;
+    height: 100%;
+  }
+  /* line 401, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-display video {
+    width: 47vw;
+  }
+
+  /* line 409, ../sass/style.scss */
+  .intro-container {
+    background: url(https://netflixparty.s3.amazonaws.com/img/land/intro-bg.svg) no-repeat -40vw 16vh;
+    background-size: cover;
+  }
+  /* line 412, ../sass/style.scss */
+  .intro-container .intro-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    padding: 6vh 6vw 6em;
+  }
+  /* line 417, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top {
+    padding-bottom: 1.5em;
+  }
+  /* line 419, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-miniTitle {
+    margin-bottom: 0.85em;
+  }
+  /* line 421, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-miniTitle p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    font-weight: 700;
+  }
+  /* line 426, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-title h2 {
+    padding: 0em;
+    margin: 0em;
+  }
+  /* line 430, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-title a button {
+    padding: 0.9em 3em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+    font-weight: 500;
+  }
+  /* line 437, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-display {
+    display: none;
+  }
+  /* line 440, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 442, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li {
+    margin-bottom: 0.8em;
+    width: 45%;
+    height: 160px;
+  }
+  /* line 446, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li .nums {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    padding-bottom: 0.2em;
+  }
+  /* line 450, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li .num-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding-bottom: 0.4em;
+  }
+  /* line 454, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 500;
+    line-height: 1.4em;
+  }
+
+  /* line 465, ../sass/style.scss */
+  .show-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    background: #191919;
+    padding: 6em 0em 4em 6vw;
+    overflow: hidden;
+  }
+  /* line 472, ../sass/style.scss */
+  .show-desktop .show-content {
+    width: 40%;
+    height: 100%;
+  }
+  /* line 474, ../sass/style.scss */
+  .show-desktop .show-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.45em;
+  }
+  /* line 479, ../sass/style.scss */
+  .show-desktop .show-display {
+    width: 60%;
+    height: 100%;
+    left: 3em;
+  }
+  /* line 482, ../sass/style.scss */
+  .show-desktop .show-display .show-colOne, .show-desktop .show-display .show-colTwo, .show-desktop .show-display .show-colThree, .show-desktop .show-display .show-colFour {
+    padding: 0em 0.3em;
+  }
+
+  /* line 488, ../sass/style.scss */
+  .sync-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    background: #191919;
+    padding: 2em 0em 2em 0em;
+  }
+  /* line 493, ../sass/style.scss */
+  .sync-desktop .sync-display {
+    margin-right: 2em;
+  }
+  /* line 495, ../sass/style.scss */
+  .sync-desktop .sync-display .sync-vid-wrap {
+    width: 100%;
+    height: 285px;
+  }
+  /* line 497, ../sass/style.scss */
+  .sync-desktop .sync-display .sync-vid-wrap .sync-vid-2 {
+    left: 23vw;
+    top: 9em;
+  }
+  /* line 503, ../sass/style.scss */
+  .sync-desktop .sync-content {
+    width: 40%;
+    height: 100%;
+  }
+  /* line 505, ../sass/style.scss */
+  .sync-desktop .sync-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.45em;
+  }
+
+  /* line 512, ../sass/style.scss */
+  .friend-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+    padding: 4em 6vw;
+  }
+  /* line 518, ../sass/style.scss */
+  .friend-desktop .emoji-overlay {
+    width: 100%;
+    height: 15vh;
+  }
+  /* line 522, ../sass/style.scss */
+  .friend-desktop .emoji-a {
+    width: 44px;
+    right: 49vw;
+    bottom: 18vh;
+  }
+  /* line 527, ../sass/style.scss */
+  .friend-desktop .emoji-b {
+    width: 70px;
+    right: 10vw;
+    bottom: 3vh;
+  }
+  /* line 532, ../sass/style.scss */
+  .friend-desktop .emoji-c {
+    width: 28px;
+    right: 17vw;
+    top: 5vh;
+  }
+  /* line 538, ../sass/style.scss */
+  .friend-desktop .friend-content {
+    width: 50%;
+    height: 100%;
+  }
+  /* line 540, ../sass/style.scss */
+  .friend-desktop .friend-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.65em;
+    padding-right: 4em;
+  }
+  /* line 546, ../sass/style.scss */
+  .friend-desktop .friend-display {
+    width: 50%;
+    height: 100%;
+  }
+  /* line 548, ../sass/style.scss */
+  .friend-desktop .friend-display .friend-vidWrap {
+    width: 300px;
+  }
+  /* line 550, ../sass/style.scss */
+  .friend-desktop .friend-display .friend-vidWrap .friend-overlay {
+    top: 0.5em;
+  }
+
+  /* line 557, ../sass/style.scss */
+  .question-desktop {
+    display: flex;
+    flex-flow: wrap row;
+  }
+  /* line 559, ../sass/style.scss */
+  .question-desktop .cta-footer {
+    padding: 6em 0em;
+  }
+  /* line 562, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap .question-miniTitle {
+    margin-bottom: 0.8em;
+  }
+  /* line 564, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap .question-miniTitle p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+    font-weight: 500;
+  }
+  /* line 568, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap h2 {
+    margin-bottom: 0.2em;
+  }
+  /* line 572, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap a button {
+    margin-top: 0.9em;
+    padding: 0.9em 3em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    font-weight: 600;
+  }
+  /* line 578, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap .np-btn {
+    margin-top: 0.9em;
+    padding: 0.9em 3em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    font-weight: 600;
+  }
+}
+@media (min-width: 992px) {
+  /* line 590, ../sass/style.scss */
+  .mobile {
+    display: none;
+  }
+
+  /* line 594, ../sass/style.scss */
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+
+  /* line 599, ../sass/style.scss */
+  .nav-desktop {
+    display: flex;
+    flex-flow: wrap row;
+  }
+  /* line 601, ../sass/style.scss */
+  .nav-desktop .nav-title {
+    padding-left: 6vw;
+  }
+  /* line 603, ../sass/style.scss */
+  .nav-desktop .nav-title a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+  /* line 607, ../sass/style.scss */
+  .nav-desktop .nav-btn {
+    padding-right: 6vw;
+  }
+  /* line 609, ../sass/style.scss */
+  .nav-desktop .nav-btn a button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 0.8em 2em;
+  }
+
+  /* line 616, ../sass/style.scss */
+  .landing-container {
+    background: url(https://netflixparty.s3.amazonaws.com/img/land/land-bg.svg) no-repeat 26vw 4vh;
+    background-size: cover;
+  }
+  /* line 619, ../sass/style.scss */
+  .landing-container .landing-wrapper {
+    overflow: hidden;
+  }
+  /* line 621, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18vh 6vw;
+  }
+  /* line 626, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content {
+    width: 45%;
+  }
+  /* line 628, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+  }
+  /* line 632, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content .landing-info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-bottom: 0.6em;
+  }
+  /* line 637, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content .landing-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    font-weight: 500;
+    margin-top: 0.5em;
+    padding: 0.9em 2em;
+  }
+  /* line 642, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content .landing-footnote {
+    margin-top: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    font-weight: 400;
+  }
+  /* line 647, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-display {
+    width: 50%;
+    height: 100%;
+  }
+  /* line 649, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-display video {
+    width: 47vw;
+  }
+
+  /* line 657, ../sass/style.scss */
+  .intro-container {
+    background: url(https://netflixparty.s3.amazonaws.com/img/land/intro-bg.svg) no-repeat -41vw 7vh;
+    background-size: cover;
+  }
+  /* line 660, ../sass/style.scss */
+  .intro-container .intro-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    padding: 2vh 8vw 6em;
+  }
+  /* line 665, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top {
+    padding-bottom: 1.5em;
+  }
+  /* line 667, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-miniTitle {
+    margin-bottom: 0.65em;
+  }
+  /* line 669, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-miniTitle p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+  }
+  /* line 674, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-title h2 {
+    margin: 0em;
+  }
+  /* line 677, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-title a button {
+    padding: 0.9em 3em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    font-weight: 500;
+  }
+  /* line 684, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-display {
+    display: none;
+  }
+  /* line 687, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 689, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li {
+    margin-bottom: 0.8em;
+    width: 45%;
+    height: 170px;
+  }
+  /* line 693, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li .nums {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-bottom: 0.3em;
+  }
+  /* line 697, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li .num-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-bottom: 0.4em;
+  }
+  /* line 701, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    font-weight: 500;
+    line-height: 1.4em;
+  }
+
+  /* line 712, ../sass/style.scss */
+  .show-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    background: #191919;
+    padding: 6em 0em 6em 6vw;
+    overflow: hidden;
+  }
+  /* line 719, ../sass/style.scss */
+  .show-desktop .show-content {
+    width: 40%;
+    height: 100%;
+  }
+  /* line 721, ../sass/style.scss */
+  .show-desktop .show-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    font-weight: 500;
+    line-height: 1.65em;
+  }
+  /* line 726, ../sass/style.scss */
+  .show-desktop .show-display {
+    width: 60%;
+    height: 100%;
+    left: 8em;
+  }
+  /* line 729, ../sass/style.scss */
+  .show-desktop .show-display .show-colOne, .show-desktop .show-display .show-colTwo, .show-desktop .show-display .show-colThree, .show-desktop .show-display .show-colFour {
+    padding: 0em 0.5em;
+  }
+
+  /* line 735, ../sass/style.scss */
+  .sync-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    background: #191919;
+    padding: 2em 0em 2em 0em;
+  }
+  /* line 740, ../sass/style.scss */
+  .sync-desktop .sync-display {
+    margin-right: 5em;
+  }
+  /* line 742, ../sass/style.scss */
+  .sync-desktop .sync-display .sync-vid-wrap {
+    width: 100%;
+    height: 385px;
+  }
+  /* line 744, ../sass/style.scss */
+  .sync-desktop .sync-display .sync-vid-wrap .sync-vid-2 {
+    left: 23vw;
+    top: 12em;
+  }
+  /* line 750, ../sass/style.scss */
+  .sync-desktop .sync-content {
+    width: 40%;
+    height: 100%;
+  }
+  /* line 752, ../sass/style.scss */
+  .sync-desktop .sync-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    font-weight: 500;
+    line-height: 1.65em;
+  }
+
+  /* line 759, ../sass/style.scss */
+  .friend-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+    padding: 4em 6vw;
+  }
+  /* line 765, ../sass/style.scss */
+  .friend-desktop .emoji-overlay {
+    width: 100%;
+    height: 15vh;
+  }
+  /* line 769, ../sass/style.scss */
+  .friend-desktop .emoji-a {
+    width: 50px;
+    right: 46vw;
+    bottom: 18vh;
+  }
+  /* line 774, ../sass/style.scss */
+  .friend-desktop .emoji-b {
+    width: 95px;
+    right: 10vw;
+    bottom: 3vh;
+  }
+  /* line 779, ../sass/style.scss */
+  .friend-desktop .emoji-c {
+    width: 35px;
+    right: 14vw;
+    top: 3vh;
+  }
+  /* line 785, ../sass/style.scss */
+  .friend-desktop .friend-content {
+    width: 50%;
+    height: 100%;
+  }
+  /* line 787, ../sass/style.scss */
+  .friend-desktop .friend-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    font-weight: 500;
+    line-height: 1.8em;
+    padding-right: 4em;
+  }
+  /* line 793, ../sass/style.scss */
+  .friend-desktop .friend-display {
+    width: 50%;
+    height: 100%;
+  }
+  /* line 795, ../sass/style.scss */
+  .friend-desktop .friend-display .friend-vidWrap {
+    width: 400px;
+  }
+  /* line 797, ../sass/style.scss */
+  .friend-desktop .friend-display .friend-vidWrap .friend-overlay {
+    top: 0.5em;
+  }
+
+  /* line 804, ../sass/style.scss */
+  .question-desktop {
+    display: flex;
+    flex-flow: wrap row;
+  }
+  /* line 806, ../sass/style.scss */
+  .question-desktop .cta-footer {
+    padding: 7em 0em;
+  }
+  /* line 809, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap .question-miniTitle {
+    margin-bottom: 0.9em;
+  }
+  /* line 811, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap .question-miniTitle p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  /* line 815, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap h2 {
+    margin-bottom: 0.3em;
+  }
+  /* line 819, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap a button {
+    margin-top: 0.85em;
+    padding: 0.9em 3em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 600;
+  }
+  /* line 825, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap .np-btn {
+    margin-top: 0.85em;
+    padding: 0.9em 3em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 837, ../sass/style.scss */
+  .mobile {
+    display: none;
+  }
+
+  /* line 841, ../sass/style.scss */
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7em;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-bottom: 0.35em;
+  }
+
+  /* line 847, ../sass/style.scss */
+  .nav-desktop {
+    display: flex;
+    flex-flow: wrap row;
+  }
+  /* line 849, ../sass/style.scss */
+  .nav-desktop .nav-title {
+    padding-left: 6vw;
+  }
+  /* line 851, ../sass/style.scss */
+  .nav-desktop .nav-title a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.55em;
+    font-weight: 700;
+  }
+  /* line 855, ../sass/style.scss */
+  .nav-desktop .nav-btn {
+    padding-right: 6vw;
+  }
+  /* line 857, ../sass/style.scss */
+  .nav-desktop .nav-btn a button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 0.8em 2em;
+  }
+
+  /* line 864, ../sass/style.scss */
+  .landing-container {
+    background: url(https://netflixparty.s3.amazonaws.com/img/land/land-bg.svg) no-repeat 33vw 0em;
+    background-size: cover;
+  }
+  /* line 867, ../sass/style.scss */
+  .landing-container .landing-wrapper {
+    overflow: hidden;
+  }
+  /* line 869, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20vh 6vw;
+  }
+  /* line 874, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content {
+    width: 40%;
+  }
+  /* line 876, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.95em;
+    font-weight: 800;
+    margin-bottom: 0em;
+  }
+  /* line 880, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content .landing-info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    font-weight: 500;
+    line-height: 1.4em;
+    margin-bottom: 0.8em;
+    margin-top: 1em;
+  }
+  /* line 886, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content .landing-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-top: 1em;
+    padding: 0.9em 2em;
+  }
+  /* line 891, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content .landing-footnote {
+    margin-top: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    font-weight: 400;
+  }
+  /* line 896, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-display {
+    width: 55%;
+    height: 100%;
+  }
+  /* line 898, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-display video {
+    width: 50vw;
+  }
+
+  /* line 906, ../sass/style.scss */
+  .intro-container {
+    background: url(https://netflixparty.s3.amazonaws.com/img/land/intro-bg.svg) no-repeat 0vw 9vh;
+    background-size: cover;
+  }
+  /* line 909, ../sass/style.scss */
+  .intro-container .intro-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    padding: 2vh 8vw 6em;
+  }
+  /* line 914, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top {
+    align-items: flex-end;
+    padding-bottom: 1.5em;
+  }
+  /* line 917, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-miniTitle {
+    margin-bottom: 0.5em;
+    width: 46%;
+  }
+  /* line 920, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-miniTitle p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+  }
+  /* line 924, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-title {
+    width: 46%;
+  }
+  /* line 926, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-title h2 {
+    margin: 0em;
+  }
+  /* line 929, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-title a button {
+    padding: 0.85em 2em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    font-weight: 500;
+  }
+  /* line 936, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-display {
+    width: 54%;
+    height: 100%;
+    display: block;
+  }
+  /* line 940, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list {
+    width: 46%;
+    height: 100%;
+  }
+  /* line 942, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li {
+    margin-bottom: 0.8em;
+    width: 46%;
+    height: 200px;
+  }
+  /* line 946, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li .nums {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    padding-bottom: 0.3em;
+  }
+  /* line 950, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li .num-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding-bottom: 0.3em;
+  }
+  /* line 954, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    line-height: 1.4em;
+  }
+
+  /* line 965, ../sass/style.scss */
+  .show-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    background: #191919;
+    padding: 6em 0em 6em 6vw;
+    overflow: hidden;
+  }
+  /* line 972, ../sass/style.scss */
+  .show-desktop .show-content {
+    width: 40%;
+    height: 100%;
+  }
+  /* line 974, ../sass/style.scss */
+  .show-desktop .show-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.6em;
+  }
+  /* line 979, ../sass/style.scss */
+  .show-desktop .show-display {
+    width: 60%;
+    height: 100%;
+    left: 8em;
+  }
+  /* line 982, ../sass/style.scss */
+  .show-desktop .show-display .show-colOne, .show-desktop .show-display .show-colTwo, .show-desktop .show-display .show-colThree, .show-desktop .show-display .show-colFour {
+    padding: 0em 0.5em;
+  }
+
+  /* line 988, ../sass/style.scss */
+  .sync-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    background: #191919;
+    padding: 6em 0em 6em 0em;
+  }
+  /* line 993, ../sass/style.scss */
+  .sync-desktop .sync-display {
+    margin-right: 5em;
+  }
+  /* line 995, ../sass/style.scss */
+  .sync-desktop .sync-display .sync-vid-wrap {
+    width: 100%;
+    height: 385px;
+  }
+  /* line 997, ../sass/style.scss */
+  .sync-desktop .sync-display .sync-vid-wrap .sync-vid-2 {
+    left: 23vw;
+    top: 30vh;
+  }
+  /* line 1003, ../sass/style.scss */
+  .sync-desktop .sync-content {
+    width: 40%;
+    height: 100%;
+  }
+  /* line 1005, ../sass/style.scss */
+  .sync-desktop .sync-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.6em;
+  }
+
+  /* line 1012, ../sass/style.scss */
+  .friend-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+    padding: 6em 6vw;
+  }
+  /* line 1018, ../sass/style.scss */
+  .friend-desktop .emoji-overlay {
+    width: 100%;
+    height: 40vh;
+  }
+  /* line 1022, ../sass/style.scss */
+  .friend-desktop .emoji-a {
+    width: 60px;
+    right: 46vw;
+    bottom: 45vh;
+  }
+  /* line 1027, ../sass/style.scss */
+  .friend-desktop .emoji-b {
+    width: 100px;
+    right: 14vw;
+    bottom: 3vh;
+  }
+  /* line 1032, ../sass/style.scss */
+  .friend-desktop .emoji-c {
+    width: 28px;
+    right: 11vw;
+    top: 12vh;
+  }
+  /* line 1038, ../sass/style.scss */
+  .friend-desktop .friend-content {
+    width: 50%;
+    height: 100%;
+  }
+  /* line 1040, ../sass/style.scss */
+  .friend-desktop .friend-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.6em;
+    padding-right: 6em;
+  }
+  /* line 1046, ../sass/style.scss */
+  .friend-desktop .friend-display {
+    width: 50%;
+    height: 100%;
+  }
+  /* line 1048, ../sass/style.scss */
+  .friend-desktop .friend-display .friend-vidWrap {
+    width: 435px;
+  }
+  /* line 1050, ../sass/style.scss */
+  .friend-desktop .friend-display .friend-vidWrap .friend-overlay {
+    top: 1em;
+  }
+
+  /* line 1057, ../sass/style.scss */
+  .question-desktop {
+    display: flex;
+    flex-flow: wrap row;
+  }
+  /* line 1059, ../sass/style.scss */
+  .question-desktop .cta-footer {
+    padding: 8.5em 0em;
+  }
+  /* line 1062, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap .question-miniTitle {
+    margin-bottom: 1em;
+  }
+  /* line 1064, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap .question-miniTitle p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  /* line 1068, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap h2 {
+    margin-bottom: 0.1em;
+  }
+  /* line 1071, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap a button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 1.5em;
+    padding: 0.9em 3em;
+  }
+  /* line 1076, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap .np-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 1.5em;
+    padding: 0.9em 3em;
+  }
+}
+@media (min-width: 1350px) {
+  /* line 1089, ../sass/style.scss */
+  .mobile, .nav-mobile {
+    display: none;
+  }
+
+  /* line 1093, ../sass/style.scss */
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-bottom: 0.5em;
+    padding: 0em;
+  }
+
+  /* line 1100, ../sass/style.scss */
+  .nav-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    width: 100%;
+    height: 80px;
+  }
+  /* line 1103, ../sass/style.scss */
+  .nav-desktop .nav-title {
+    padding-left: 8vw;
+  }
+  /* line 1105, ../sass/style.scss */
+  .nav-desktop .nav-title a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.55em;
+    font-weight: 700;
+  }
+  /* line 1109, ../sass/style.scss */
+  .nav-desktop .nav-btn {
+    padding-right: 8vw;
+  }
+  /* line 1111, ../sass/style.scss */
+  .nav-desktop .nav-btn a button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 0.8em 2em;
+  }
+
+  /* line 1119, ../sass/style.scss */
+  .landing-container {
+    background: url(https://netflixparty.s3.amazonaws.com/img/land/land-bg.svg) no-repeat 39vw 0em;
+    background-size: cover;
+  }
+  /* line 1122, ../sass/style.scss */
+  .landing-container .landing-wrapper {
+    overflow: hidden;
+  }
+  /* line 1124, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22vh 8vw;
+  }
+  /* line 1129, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content {
+    width: 40%;
+  }
+  /* line 1131, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+  }
+  /* line 1135, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content .landing-info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-top: 0.5em;
+  }
+  /* line 1140, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content .landing-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-top: 1.5em;
+    padding: 1em 4em;
+  }
+  /* line 1145, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-content .landing-footnote {
+    margin-top: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 400;
+  }
+  /* line 1150, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-display {
+    width: 50%;
+    height: 100%;
+  }
+  /* line 1152, ../sass/style.scss */
+  .landing-container .landing-wrapper .landing-desktop .landing-display video {
+    width: 44vw;
+  }
+
+  /* line 1160, ../sass/style.scss */
+  .intro-container {
+    background: url(https://netflixparty.s3.amazonaws.com/img/land/intro-bg.svg) no-repeat 0vw 14vh;
+    background-size: cover;
+  }
+  /* line 1163, ../sass/style.scss */
+  .intro-container .intro-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    padding: 2vh 8vw 6em;
+  }
+  /* line 1168, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top {
+    align-items: flex-end;
+    padding-bottom: 2em;
+  }
+  /* line 1171, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-miniTitle {
+    margin-bottom: 0.7em;
+    width: 47%;
+  }
+  /* line 1174, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-miniTitle p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    font-weight: 700;
+  }
+  /* line 1178, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-title {
+    width: 47%;
+  }
+  /* line 1180, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-top .intro-title a button {
+    padding: 0.9em 2em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  /* line 1187, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-display {
+    width: 53%;
+    height: 100%;
+    display: block;
+  }
+  /* line 1191, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list {
+    width: 47%;
+    height: 100%;
+  }
+  /* line 1193, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li {
+    margin-bottom: 0.8em;
+    width: 45%;
+    height: 230px;
+  }
+  /* line 1197, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li .nums {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-bottom: 0.35em;
+  }
+  /* line 1201, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li .num-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15em;
+    font-weight: 600;
+    padding-bottom: 0.5em;
+  }
+  /* line 1205, ../sass/style.scss */
+  .intro-container .intro-desktop .intro-content .intro-wrap .intro-list li p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.4em;
+  }
+
+  /* line 1216, ../sass/style.scss */
+  .show-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    background: #191919;
+    padding: 8em 0em 8em 8vw;
+    overflow: hidden;
+  }
+  /* line 1223, ../sass/style.scss */
+  .show-desktop .show-content {
+    width: 35%;
+    height: 100%;
+  }
+  /* line 1225, ../sass/style.scss */
+  .show-desktop .show-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.8em;
+  }
+  /* line 1230, ../sass/style.scss */
+  .show-desktop .show-display {
+    width: 65%;
+    height: 100%;
+    left: 8em;
+  }
+  /* line 1233, ../sass/style.scss */
+  .show-desktop .show-display .show-colOne, .show-desktop .show-display .show-colTwo, .show-desktop .show-display .show-colThree, .show-desktop .show-display .show-colFour {
+    padding: 0em 0.5em;
+  }
+
+  /* line 1239, ../sass/style.scss */
+  .sync-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    background: #191919;
+    padding: 8em 0em 8em 0em;
+  }
+  /* line 1244, ../sass/style.scss */
+  .sync-desktop .sync-display {
+    margin-right: 5em;
+  }
+  /* line 1246, ../sass/style.scss */
+  .sync-desktop .sync-display .sync-vid-wrap {
+    width: 100%;
+    height: 550px;
+  }
+  /* line 1248, ../sass/style.scss */
+  .sync-desktop .sync-display .sync-vid-wrap .sync-vid-2 {
+    left: 23vw;
+    top: 30vh;
+  }
+  /* line 1254, ../sass/style.scss */
+  .sync-desktop .sync-content {
+    width: 37%;
+    height: 100%;
+  }
+  /* line 1256, ../sass/style.scss */
+  .sync-desktop .sync-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.8em;
+  }
+
+  /* line 1263, ../sass/style.scss */
+  .friend-desktop {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    background: #191919;
+    padding: 8em 8vw;
+  }
+  /* line 1270, ../sass/style.scss */
+  .friend-desktop .emoji-overlay {
+    width: 100%;
+    height: 40vh;
+  }
+  /* line 1274, ../sass/style.scss */
+  .friend-desktop .emoji-a {
+    width: 80px;
+    right: 44vw;
+    bottom: 40vh;
+  }
+  /* line 1279, ../sass/style.scss */
+  .friend-desktop .emoji-b {
+    width: 120px;
+    right: 14vw;
+    bottom: 3vh;
+  }
+  /* line 1284, ../sass/style.scss */
+  .friend-desktop .emoji-c {
+    width: 34px;
+    right: 16vw;
+    top: 13vh;
+  }
+  /* line 1290, ../sass/style.scss */
+  .friend-desktop .friend-content {
+    width: 40%;
+    height: 100%;
+  }
+  /* line 1292, ../sass/style.scss */
+  .friend-desktop .friend-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.8em;
+    padding-right: 6em;
+  }
+  /* line 1298, ../sass/style.scss */
+  .friend-desktop .friend-display {
+    width: 50%;
+    height: 100%;
+  }
+  /* line 1300, ../sass/style.scss */
+  .friend-desktop .friend-display .friend-vidWrap {
+    width: 580px;
+  }
+  /* line 1302, ../sass/style.scss */
+  .friend-desktop .friend-display .friend-vidWrap .friend-overlay {
+    top: 2em;
+  }
+
+  /* line 1309, ../sass/style.scss */
+  .question-desktop {
+    display: flex;
+    flex-flow: wrap row;
+  }
+  /* line 1311, ../sass/style.scss */
+  .question-desktop .cta-footer {
+    padding: 10em 0em;
+  }
+  /* line 1314, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap .question-miniTitle {
+    margin-bottom: 1em;
+  }
+  /* line 1316, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap .question-miniTitle p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 500;
+  }
+  /* line 1320, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap h2 {
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+  }
+  /* line 1324, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap a button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 1.4em;
+    padding: 0.9em 4em;
+  }
+  /* line 1329, ../sass/style.scss */
+  .question-desktop .cta-footer .question-wrap .np-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 1.4em;
+    padding: 0.9em 4em;
+  }
+}

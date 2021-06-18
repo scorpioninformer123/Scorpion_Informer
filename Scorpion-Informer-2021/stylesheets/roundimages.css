@@ -1,0 +1,290 @@
+
+.round-img {
+	border: 10px solid #dbdbdb;
+	border-radius: 50%;
+	margin: 15px auto;
+	-moz-box-shadow: 0 2px 4px rgba(104,104,104,0.8) inset;
+	-webkit-box-shadow: 0 2px 4px rgba(104,104,104,0.8) inset;
+	box-shadow: 0 2px 4px rgba(104,104,104,0.8) inset;
+}
+.round-img-lgb {
+	border: 10px solid #dbdbdb !important;
+  height:305px;
+  max-width:300px;
+  min-width:300px;
+}
+.round-img-lgb img{
+  display: inline;
+}
+
+/*  --- SECTIONS  --- */
+
+.center-container {
+	max-width: 1050px!important;
+	margin: 0 auto;
+}
+.center-content {
+	margin: 0 auto!important;
+	float: none!important;
+}
+
+
+
+
+
+
+
+.sec {
+	clear: both;
+	margin: 0px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+section:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+}
+section p {
+	margin: 20px 0;
+}
+
+.nam {
+	width: 100%;
+	text-align: center;
+	margin-top: -150px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 84px;
+	color: #fff;
+	font-weight: 400;
+}
+.names-compact {
+	width: 100%;
+	text-align: center;
+	margin-top: 80px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 70px;
+	color: #cb3438;
+	font-weight: 400;
+	background: url(../images/particles-small.png) center no-repeat;
+}
+.names-compact .fa {
+	font-size: 50px;
+	color: #cb3438;
+	display: none;
+}
+.names span {
+	color: #cb3438;
+}
+.name-1 {
+	padding-top: 80px;
+	text-align: right;
+}
+.name-2 {
+	padding-top: 80px;
+	text-align: left;
+}
+
+/* --- Wedding Date -- */
+
+.wedate {
+	text-align: center;
+	font-size: 16px;
+	color: #8a8a8a;
+	text-transform: uppercase;
+}
+.wedate i {
+	margin: 0 5px;
+}
+
+/* --- Main Images --- */
+
+.main-images {
+	position: relative;
+	margin-top: 30px !important;
+	width: 910px;
+	height: 360px;
+	background: url(../images/particles.png) center -10px no-repeat;
+	z-index: -99;
+}
+.main-images .couple:hover img {
+	background: #fff;
+	opacity: 0.8;
+	cursor: pointer;
+}
+.images {
+	width: 100%;
+}
+.image-01 {
+	position: absolute;
+	top: 70px;
+	left: -20px;
+	z-index: -99;
+}
+.image-02 {
+	position: absolute;
+	top: 110px;
+	left: 140px;
+	z-index: -49;
+}
+.image-04 {
+	position: absolute;
+	top: 110px;
+	left: 590px;
+	z-index: -49;
+}
+.image-05 {
+	position: absolute;
+	top: 70px;
+	left: 755px;
+	z-index: -99;
+}
+
+.countdown {
+	display: inline-block;
+	margin-top: 0px; /*20px*/
+}
+.countdown div {
+	width: 74px;
+	height: 74px;
+	border-radius: 100px;
+	float: left;
+	background: #cb3438;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 25px;
+	text-align: center;
+	margin-left: 16px;
+	margin-bottom: 10px;
+}
+.countdown div p {
+	color: #fff;
+	padding-top: 0px;
+	margin-bottom:0;
+}
+.countdown div:first-child{
+	margin-left: 0px;
+}
+.countdown span {
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+.countdown-dark {
+	color: #333;
+}
+.countdown-white {
+	color: #fff;
+}
+
+.countdown-mobile {
+	margin-top: 20px;
+	display: none;
+}
+.countdown-mobile div {
+	width: 74px;
+	height: 74px;
+	border-radius: 100px;
+	float: left;
+	background: #cb3438;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 25px;
+	text-align: center;
+	margin-left: 16px;
+	margin-bottom: 10px;
+}
+.countdown-mobile div p {
+	color: #fff;
+	padding-top: 16px;
+}
+.countdown-mobile div:first-child{
+	margin-left: 0px;
+}
+.countdown-mobile span {
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+.mobile-divider {
+	display: none;
+}
+
+
+.thumbnail_album_name {
+   text-align:left; 
+}  
+
+.thumbnail_album_photo_count {
+    text-align:left; 
+    padding-left: 0px;
+}
+
+@media(max-width:767px) {
+  .main-images .couple img {
+  height:100%;
+  }
+  
+  .countdown-mobile div p {
+	   color: #fff;
+  	padding-top: 0px;
+  	margin-bottom:0;
+  }
+  
+  .countdown-mobile div span {
+	 padding:0px;
+  }
+}
+
+.round-img-banner {
+	border: 10px solid #dbdbdb;
+	border-radius: 50%;
+	margin: 15px auto;
+	-moz-box-shadow: 0 2px 4px rgba(104,104,104,0.8) inset;
+	-webkit-box-shadow: 0 2px 4px rgba(104,104,104,0.8) inset;
+	box-shadow: 0 2px 4px rgba(104,104,104,0.8) inset;
+   
+  height: 180px;
+  overflow: hidden;
+  text-align: center;
+  width: 180px;
+}
+
+.round-img-lgb-banner {
+	border: 10px solid #dbdbdb !important;
+  height:305px;
+  width: 300px;
+  max-width:300px;
+  min-width:300px;
+  
+  overflow: hidden;
+  text-align: center;
+}
+.round-img-banner img{
+  vertical-align: middle;
+}
+   
+* {
+    transition: all 300ms;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+  
+  

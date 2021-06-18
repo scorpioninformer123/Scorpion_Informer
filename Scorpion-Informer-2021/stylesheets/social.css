@@ -1,0 +1,179 @@
+
+  
+    
+/*social share button*/
+.menu-item,
+.menu-open-button {
+  background: #e8491d;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  color: #FFFFFF;
+  
+  text-align: center;
+  line-height: 84px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+.menu-open {
+  display: none;
+}
+
+.menuShare {
+  margin: auto;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  width: 100px;
+  height:100px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 26px;
+  z-index: 99;
+}
+
+.menuShare a.menu-item .fa{
+  color: #fff;
+}
+
+.share-icon{
+  color: #fff;
+}
+
+.menu-item:hover {
+  opacity: 1;
+}
+
+.menu-item:nth-child(3) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(4) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(5) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(6) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-open-button {
+  z-index: 2;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.menu-open-button:hover {
+  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+  transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.menu-open:checked ~ .menu-item {
+  -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+  transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(3) {
+  transition-duration: 180ms;
+  -webkit-transition-duration: 180ms;
+  -webkit-transform: translate3d(0.08361px, -84.99997px, 0);
+  transform: translate3d(0.08361px, -84.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(4) {
+  transition-duration: 280ms;
+  -webkit-transition-duration: 280ms;
+  -webkit-transform: translate3d(0.08361px, -174.99997px, 0);
+  transform: translate3d(0.08361px, -174.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(5) {
+  transition-duration: 380ms;
+  -webkit-transition-duration: 380ms;
+  -webkit-transform: translate3d(0.08361px, -262.99997px, 0);
+  transform: translate3d(0.08361px, -262.99997px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(6) {
+  transition-duration: 380ms;
+  -webkit-transition-duration: 380ms;
+  -webkit-transform: translate3d(0.08361px, -350.99997px, 0);
+  transform: translate3d(0.08361px, -350.99997px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(7) {
+  transition-duration: 480ms;
+  -webkit-transition-duration: 480ms;
+  -webkit-transform: translate3d(0.08361px, -440.99997px, 0);
+  transform: translate3d(0.08361px, -440.99997px, 0);
+}
+
+.facebook_share_btn {
+  background-color: #3b5998;
+}
+
+.facebook_share_btn:hover {
+  color: #111;
+  text-shadow: none;
+}
+
+.twitter_share_btn {
+  background-color: #00aced;
+}
+
+.twitter_share_btn:hover {
+  color: #111;
+  text-shadow: none;
+}
+
+.google_plus_share_btn {
+  background-color: #dd4b39;
+}
+
+.google_plus_share_btn:hover {
+  color: #111;
+  text-shadow: none;
+}
+.whatsapp_share_btn {
+  background-color: #00C853;
+}
+
+.whatsapp_share_btn:hover {
+  color: #111;
+  text-shadow: none;
+}
+.linkedin_share_btn {
+  background-color: #00aced;
+}
+
+.linkedin_share_btn:hover {
+  color: #111;
+  text-shadow: none;
+}

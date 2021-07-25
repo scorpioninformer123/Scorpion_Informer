@@ -4,13 +4,336 @@
   <meta charset="UTF-8">
   <title>Scorpion Informer</title>
   
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Neuton|Oswald'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Neuton|Oswald'>
+   
+    
+       
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.1/css/all.css'>
+    
+     
+     
+     
+     <link rel="icon" href="./1.jpg" type="" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    
+    
+    
+    
+    
+    
 
 </head>
     <style>
+         
+.floating-text {
+	background-color: #001F61;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	font-family: 'Muli';
+	padding: 7px 15px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 998;
+}
+
+.floating-text a {
+	color: #FF7500;
+	text-decoration: none;
+}
+ 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+        .fixed-whatsapp {
+     position: fixed;
+     bottom: 50px;
+     left: 20px;
+     width: 80px;
+     height: 80px;
+     line-height: 80px;
+     z-index: 9999;
+     text-align: center;
+    
+}
+ .fixed-whatsapp:before {
+     content: "";
+     width: 80px;
+     height: 80px;
+     background-color: #00C853;
+     position: absolute;
+     border-radius: 100%;
+     box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, .12), 0 1px 1px 0 rgba(0, 0, 0, .24);
+     z-index: 1;
+     top: 0;
+     left: 0;
+     font-size: 20px;
+}
+ .fixed-whatsapp svg {
+     vertical-align: middle;
+     z-index: 2;
+     position: relative;
+}
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+  
+    
+/*social share button*/
+.menu-item,
+.menu-open-button {
+  background: #e8491d;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  color: #FFFFFF;
+  
+  text-align: center;
+  line-height: 84px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+.menu-open {
+  display: none;
+}
+
+.menuShare {
+  margin: auto;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  width: 100px;
+  height:100px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 26px;
+  z-index: 99;
+}
+
+.menuShare a.menu-item .fa{
+  color: #fff;
+}
+
+.share-icon{
+  color: #fff;
+}
+
+.menu-item:hover {
+  opacity: 1;
+}
+
+.menu-item:nth-child(3) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(4) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(5) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(6) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-open-button {
+  z-index: 2;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.menu-open-button:hover {
+  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+  transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.menu-open:checked ~ .menu-item {
+  -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+  transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(3) {
+  transition-duration: 180ms;
+  -webkit-transition-duration: 180ms;
+  -webkit-transform: translate3d(0.08361px, -84.99997px, 0);
+  transform: translate3d(0.08361px, -84.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(4) {
+  transition-duration: 280ms;
+  -webkit-transition-duration: 280ms;
+  -webkit-transform: translate3d(0.08361px, -174.99997px, 0);
+  transform: translate3d(0.08361px, -174.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(5) {
+  transition-duration: 380ms;
+  -webkit-transition-duration: 380ms;
+  -webkit-transform: translate3d(0.08361px, -262.99997px, 0);
+  transform: translate3d(0.08361px, -262.99997px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(6) {
+  transition-duration: 380ms;
+  -webkit-transition-duration: 380ms;
+  -webkit-transform: translate3d(0.08361px, -350.99997px, 0);
+  transform: translate3d(0.08361px, -350.99997px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(7) {
+  transition-duration: 480ms;
+  -webkit-transition-duration: 480ms;
+  -webkit-transform: translate3d(0.08361px, -440.99997px, 0);
+  transform: translate3d(0.08361px, -440.99997px, 0);
+}
+
+.facebook_share_btn {
+  background-color: #3b5998;
+}
+
+.facebook_share_btn:hover {
+  color: #111;
+  text-shadow: none;
+}
+
+.twitter_share_btn {
+  background-color: #00aced;
+}
+
+.twitter_share_btn:hover {
+  color: #111;
+  text-shadow: none;
+}
+
+.google_plus_share_btn {
+  background-color: #dd4b39;
+}
+
+.google_plus_share_btn:hover {
+  color: #111;
+  text-shadow: none;
+}
+.whatsapp_share_btn {
+  background-color: #00C853;
+}
+
+.whatsapp_share_btn:hover {
+  color: #111;
+  text-shadow: none;
+}
+.linkedin_share_btn {
+  background-color: #00aced;
+}
+
+.linkedin_share_btn:hover {
+  color: #111;
+  text-shadow: none;
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     body {
   font: 400 1em/1.5 "Neuton";
   background: #090d00;
@@ -211,6 +534,20 @@ html, body {
         
     </style>
 <body>
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     <br><br>
     
@@ -223,11 +560,58 @@ html, body {
     
     
     
+     
+<div class="floating-text">
+	© Scorpion Home Designs : <a href="https://wa.me/<+918310323746>" target="_blank">ALL RIGHTS RESERVED</a>
+</div>
+    
+    
+    
+       <!-- partial:index.partial.html -->
+<a class='fixed-whatsapp' href='https://wa.me/<+918310323746>' rel='nofollow noopener' target='_blank' title='Whatsapp'>
+<svg viewBox='0 0 24 24' width='34' height='34'>
+<path fill='#ffffff' d='M16.75,13.96C17,14.09 17.16,14.16 17.21,14.26C17.27,14.37 17.25,14.87 17,15.44C16.8,16 15.76,16.54 15.3,16.56C14.84,16.58 14.83,16.92 12.34,15.83C9.85,14.74 8.35,12.08 8.23,11.91C8.11,11.74 7.27,10.53 7.31,9.3C7.36,8.08 8,7.5 8.26,7.26C8.5,7 8.77,6.97 8.94,7H9.41C9.56,7 9.77,6.94 9.96,7.45L10.65,9.32C10.71,9.45 10.75,9.6 10.66,9.76L10.39,10.17L10,10.59C9.88,10.71 9.74,10.84 9.88,11.09C10,11.35 10.5,12.18 11.2,12.87C12.11,13.75 12.91,14.04 13.15,14.17C13.39,14.31 13.54,14.29 13.69,14.13L14.5,13.19C14.69,12.94 14.85,13 15.08,13.08L16.75,13.96M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C10.03,22 8.2,21.43 6.65,20.45L2,22L3.55,17.35C2.57,15.8 2,13.97 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12C4,13.72 4.54,15.31 5.46,16.61L4.5,19.5L7.39,18.54C8.69,19.46 10.28,20 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z'/>
+</svg>
+</a>
+<!-- partial -->
+  
     
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+    <nav class="menuShare">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open"><i class="fa fa-share-alt share-icon"></i></label>
+                <a class="menu-item twitter_share_btn" href="http://twitter.com/share?url=https://scorpioninformer123.github.io/Malenadu-Home-Designs/"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a class="menu-item google_plus_share_btn" href="https://plus.google.com/share?url=https://scorpioninformer123.github.io/Malenadu-Home-Designs/"><i class="fab fa-google" aria-hidden="true"></i></a>
+                <a class="menu-item whatsapp_share_btn" href="whatsapp://send?text=https://scorpioninformer123.github.io/Malenadu-Home-Designs/"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                <a class="menu-item facebook_share_btn" href="http://www.facebook.com/sharer.php?u=https://scorpioninformer123.github.io/Malenadu-Home-Designs/"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a class="menu-item linkedin_share_btn" href="http://www.linkedin.com/shareArticle?mini=true&url=https://scorpioninformer123.github.io/Malenadu-Home-Designs/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+	</nav>
+
+
     
     
     
@@ -246,7 +630,7 @@ html, body {
 <p>
   Innovation starts with a dream
   <span>
-    Scorpion Informer
+    SCORPION INFORMER
   </span>
   &mdash; Exterior & Interior &mdash;
 </p>
